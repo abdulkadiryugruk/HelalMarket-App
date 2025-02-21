@@ -1,0 +1,68 @@
+{
+	"products": [
+	  {
+		"id": 1,
+		"name": "Kaşar Peyniri",
+		"category": "Şarküteri",
+		"price": 120.50,
+		"image": "https://example.com/kasar-peyniri.jpg"
+	  },
+	  {
+		"id": 2,
+		"name": "Sucuk",
+		"category": "Şarküteri",
+		"price": 150.00,
+		"image": "https://example.com/sucuk.jpg"
+	  },
+	  {
+		"id": 3,
+		"name": "Domates",
+		"category": "Manav",
+		"price": 25.00,
+		"image": "https://example.com/domates.jpg"
+	  },
+	  {
+		"id": 4,
+		"name": "Salatalık",
+		"category": "Manav",
+		"price": 18.00,
+		"image": "https://example.com/salatalik.jpg"
+	  },
+	  {
+		"id": 5,
+		"name": "Mercimek",
+		"category": "Bakliyat",
+		"price": 40.00,
+		"image": "https://example.com/mercimek.jpg"
+	  },
+	  {
+		"id": 6,
+		"name": "Nohut",
+		"category": "Bakliyat",
+		"price": 45.00,
+		"image": "https://example.com/nohut.jpg"
+	  },
+	  {
+		"id": 9,
+		"name": "Fasulye",
+		"category": "Bakliyat",
+		"price": 45.00,
+		"image": "https://example.com/nohut.jpg"
+	  },
+	  {
+		"id": 7,
+		"name": "Zeytinyağı",
+		"category": "Yağ",
+		"price": 220.00,
+		"image": "https://example.com/zeytinyagi.jpg"
+	  },
+	  {
+		"id": 8,
+		"name": "Ayçiçek Yağı",
+		"category": "Yağ",
+		"price": 90.00,
+		"image": "https://example.com/aycicek-yagi.jpg"
+	  }
+	]
+  }
+  
