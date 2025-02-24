@@ -29,7 +29,7 @@ const SearchScreen = () => {
       />
       <FlatList
         data={filteredProducts}
-        keyExtractor={(item) => item.id.toString()}
+        keyExtractor={item => item.name}
         numColumns={2}
         renderItem={({ item }) => <ProductItem item={item} />}
       />

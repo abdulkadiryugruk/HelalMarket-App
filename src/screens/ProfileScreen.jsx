@@ -12,6 +12,7 @@ const ProfileScreen = () => {
   const [savedData, setSavedData] = useState(null);
   const [isInputVisible, setIsInputVisible] = useState(false);
   const [isAddButtonVisible, setIsAddButtonVisible] = useState(true);
+  const [orders, setOrders] = useState([]);
 
   const handleNumberChange = (text) => {
     const cleanedText = text.replace(/[^0-9]/g, '');
@@ -58,6 +59,35 @@ const ProfileScreen = () => {
 
     loadData();
   }, []);
+
+  useEffect(() => {
+    const loadOrders = async () => {
+      try {
+        const savedOrders = await AsyncStorage.getItem('orders');
+        console.log('Yüklenen siparişler:', savedOrders); // Kontrol 2
+        const parsedOrders = JSON.parse(savedOrders) || [];
+        console.log('Parse edilmiş siparişler:', parsedOrders); // Kontrol 3
+        setOrders(parsedOrders);
+      } catch (error) {
+        console.log('Siparişler yüklenirken hata oluştu:', error);
+      }
+    };
+
+    loadOrders();
+  }, []);
+
+  const handleOrderPress = (order) => {
+    if (!order || !order.item || !Array.isArray(order.item)) {
+      Alert.alert('Hata', 'Sipariş detayları bulunamadı');
+      return;
+    }
+  
+    const orderDetails = order.item.map((item) => (   // 'items' yerine 'item' kullanıyoruz
+      `${item.name} - Adet: ${item.quantity}`
+    )).join("\n");
+  
+    Alert.alert('Sipariş Detayları', `Sipariş Tarihi: ${order.date}\n\n${orderDetails}`);
+  };
 
   const handleSave = async () => {
     if (!validateForm()) return;
@@ -127,6 +157,7 @@ const ProfileScreen = () => {
   );
 
   const renderSavedData = () => (
+    <View>
     <View style={styles.savedDataContainer}>
       <View style={styles.dataField}>
         <Text style={styles.fieldLabel}>Ad Soyad:</Text>
@@ -143,6 +174,19 @@ const ProfileScreen = () => {
       <TouchableOpacity style={styles.button} onPress={handleEdit}>
         <Text style={styles.buttonText}>Düzenle</Text>
       </TouchableOpacity>
+    </View>
+    <View style={[styles.savedDataContainer,{marginTop:'10%'}]}>
+    <Text style={styles.title}>Geçmiş Siparişler</Text>
+      {orders.length === 0 ? (
+        <Text>Henüz siparişiniz yok.</Text>
+      ) : (
+        orders.map((order, index) => (
+          <TouchableOpacity key={index} style={styles.orderItem} onPress={() => handleOrderPress(order)}>
+            <Text style={styles.orderText}>{order.date}</Text>
+          </TouchableOpacity>
+        ))
+      )}
+    </View>
     </View>
   );
 
@@ -256,6 +300,18 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#333',
     fontWeight: '500',
+  },
+  orderItem: {
+    padding: 10,
+    marginBottom: 10,
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: '#ddd',
+  },
+  orderText: {
+    fontSize: 16,
+    color: '#333',
   },
 });
 

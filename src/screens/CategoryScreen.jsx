@@ -16,7 +16,7 @@ const CategoryScreen = ({ route }) => {
       <FlatList
         data={filteredProducts}
         renderItem={({ item }) => <ProductItem item={item} />}
-        keyExtractor={item => item.id.toString()}
+        keyExtractor={item => item.name}
         numColumns={2}
         contentContainerStyle={styles.listContainer}
       />

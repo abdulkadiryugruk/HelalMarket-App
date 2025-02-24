@@ -1,22 +1,49 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
-import { useCart } from '../context/CartContext'; // 🚀 Sepet fonksiyonlarını al
+import { StyleSheet, Text, View, Button, TextInput, Alert } from 'react-native';
+import { useCart } from '../context/CartContext'; 
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Product = ({ route, navigation }) => {
   const { product } = route.params;
   const [quantity, setQuantity] = useState('1');
-  const { addToCart } = useCart(); // ✅ Sepete ekleme fonksiyonunu al
+  const { cartItems, addToCart, updateQuantity } = useCart(); 
 
-  const handleAddToCart = () => {
-    addToCart(product, quantity); // 🚀 Ürünü sepete ekle
-    alert(`${quantity} adet ${product.name} sepete eklendi!`);
+  const handleAddToCart = async () => {
+    const existingProduct = cartItems.find(item => item.id === product.id);
     
+    if (existingProduct) {
+      const newQuantity = parseInt(existingProduct.quantity) + parseInt(quantity);
+      updateQuantity(product.id, newQuantity.toString());
+    } else {
+      addToCart(product, quantity);
+    }
+
+    // Yeni siparişi kaydetmek
+    const currentDate = new Date().toLocaleString();
+    const newOrder = {
+      date: currentDate,
+      products: cartItems.map(item => ({ name: item.name, quantity: item.quantity })),
+    };
+    
+    try {
+      const storedOrders = await AsyncStorage.getItem('orders');
+      const orders = storedOrders ? JSON.parse(storedOrders) : [];
+      orders.push(newOrder);
+
+      if (orders.length > 5) {
+        orders.shift();  // Son 5 siparişi tutmak için ilkini sil
+      }
+
+      await AsyncStorage.setItem('orders', JSON.stringify(orders));
+      Alert.alert('Sipariş Başarıyla Kaydedildi!', `${quantity} adet ${product.name} sepete eklendi.`);
+    } catch (error) {
+      console.error('Error saving order:', error);
+    }
   };
 
   return (
     <View style={styles.container}>
       <Text style={styles.productName}>{product.name}</Text>
-      {/* <Text style={styles.productPrice}>{product.price} TL</Text> */}
 
       <TextInput
         style={styles.input}
@@ -42,11 +69,6 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: 'bold',
     marginBottom: 10,
-  },
-  productPrice: {
-    fontSize: 18,
-    color: '#e86924',
-    marginBottom: 20,
   },
   input: {
     borderWidth: 1,

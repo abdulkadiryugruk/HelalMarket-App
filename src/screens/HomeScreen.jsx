@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import {
   StyleSheet,
   Text,
@@ -6,11 +6,44 @@ import {
   StatusBar,
   FlatList,
   TouchableOpacity,
+  Alert,
 } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useNavigation } from '@react-navigation/native';
 
 const categories = ['Şarküteri', 'Manav', 'Bakliyat', 'Yağ'];
 
-const HomeScreen = ({navigation}) => {
+const HomeScreen = () => {
+  const navigation = useNavigation();
+  const alertShown = useRef(false); // 📌 Alert'in tekrar çıkmasını engellemek için
+
+  useEffect(() => {
+    const checkCart = async () => {
+      try {
+        const savedCart = await AsyncStorage.getItem('cart');
+        if (savedCart) {
+          const cartItems = JSON.parse(savedCart);
+          if (cartItems.length > 0 && !alertShown.current) {
+            alertShown.current = true; // ✅ Tekrar çıkmasını engelliyoruz
+            Alert.alert(
+              "Hatırlatma",
+              "Sepetinizde ürünler var, alışverişe devam etmek ister misiniz?",
+              [
+                { text: "Hayır", style: "cancel" },
+                { text: "Tamam", onPress: () => navigation.navigate("Sepetim") } // ✅ Doğru yönlendirme
+              ]
+            );
+            
+          }
+        }
+      } catch (error) {
+        console.error("Sepet kontrol edilirken hata oluştu:", error);
+      }
+    };
+
+    checkCart();
+  }, [navigation]);
+
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="#e86924" barStyle="light-content" />
@@ -75,16 +108,6 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 18,
     fontWeight: 'bold',
-  },
-  BottomBar: {
-    height: '7%',
-    width: '100%',
-    backgroundColor: '#e86924',
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    alignItems: 'center',
-    borderTopLeftRadius: 25,
-    borderTopRightRadius: 25,
   },
 });
 
