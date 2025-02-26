@@ -1,68 +1,81 @@
 {
 	"products": [
-	  {
-		"id": 1,
-		"name": "Kaşar Peyniri",
-		"category": "Şarküteri",
-		"price": 120.50,
-		"image": "https://example.com/kasar-peyniri.jpg"
-	  },
-	  {
-		"id": 2,
-		"name": "Sucuk",
-		"category": "Şarküteri",
-		"price": 150.00,
-		"image": "https://example.com/sucuk.jpg"
-	  },
-	  {
-		"id": 3,
-		"name": "Domates",
-		"category": "Manav",
-		"price": 25.00,
-		"image": "https://example.com/domates.jpg"
-	  },
-	  {
-		"id": 4,
-		"name": "Salatalık",
-		"category": "Manav",
-		"price": 18.00,
-		"image": "https://example.com/salatalik.jpg"
-	  },
-	  {
-		"id": 5,
-		"name": "Mercimek",
-		"category": "Bakliyat",
-		"price": 40.00,
-		"image": "https://example.com/mercimek.jpg"
-	  },
-	  {
-		"id": 6,
-		"name": "Nohut",
-		"category": "Bakliyat",
-		"price": 45.00,
-		"image": "https://example.com/nohut.jpg"
-	  },
-	  {
-		"id": 9,
-		"name": "Fasulye",
-		"category": "Bakliyat",
-		"price": 45.00,
-		"image": "https://example.com/nohut.jpg"
-	  },
-	  {
-		"id": 7,
-		"name": "Zeytinyağı",
-		"category": "Yağ",
-		"price": 220.00,
-		"image": "https://example.com/zeytinyagi.jpg"
-	  },
-	  {
-		"id": 8,
-		"name": "Ayçiçek Yağı",
-		"category": "Yağ",
-		"price": 90.00,
-		"image": "https://example.com/aycicek-yagi.jpg"
-	  }
+		{
+			"id": 1,
+			"name": "Duru 1kg Bulgur",
+			"category": "Bakliyat",
+			"price": 35.00,
+			"image": "assets/images/products/bakliyat-duru-1-kg-bulgur.webp"
+		},
+		{
+			"id": 2,
+			"name": "Duru 1kg Pirinç",
+			"category": "Bakliyat",
+			"price": 50.00,
+			"image": "assets/images/products/bakliyat-Duru-1-kg-pirinc.webp"
+		},
+		{
+			"id": 3,
+			"name": "Diş Macunu",
+			"category": "Kozmetik",
+			"price": 45.00,
+			"image": "assets/images/products/kozmatik-dis-macunu.webp"
+		},
+		{
+			"id": 4,
+			"name": "Saç Kremi",
+			"category": "Kozmetik",
+			"price": 60.00,
+			"image": "assets/images/products/kozmatik-sac-kremi.webp"
+		},
+		{
+			"id": 5,
+			"name": "Elma",
+			"category": "Manav",
+			"price": 25.00,
+			"image": "assets/images/products/manav-elma.webp"
+		},
+		{
+			"id": 6,
+			"name": "Muz",
+			"category": "Manav",
+			"price": 40.00,
+			"image": "assets/images/products/manav-muz.webp"
+		},
+		{
+			"id": 7,
+			"name": "Portakal",
+			"category": "Manav",
+			"price": 30.00,
+			"image": "assets/images/products/manav-portakal.webp"
+		},
+		{
+			"id": 8,
+			"name": "Açık Beyaz Peynir",
+			"category": "Şarküteri",
+			"price": 120.00,
+			"image": "assets/images/products/sarkuteri-acik-beyaz-peynir.webp"
+		},
+		{
+			"id": 9,
+			"name": "Açık Zeytin",
+			"category": "Şarküteri",
+			"price": 100.00,
+			"image": "assets/images/products/sarkuteri-acik-zeytin.webp"
+		},
+		{
+			"id": 10,
+			"name": "Balkan 1kg Beyaz Peynir",
+			"category": "Şarküteri",
+			"price": 140.00,
+			"image": "assets/images/products/sarkuteri-balkan-1kg-beyaz-peynir.webp"
+		},
+		{
+			"id": 11,
+			"name": "Sucuk",
+			"category": "Şarküteri",
+			"price": 160.00,
+			"image": "assets/images/products/sarkuteri-sucuk.webp"
+		}
 	]
-  }
-  
+}

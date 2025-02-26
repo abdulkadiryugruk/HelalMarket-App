@@ -3,12 +3,14 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import {useCart} from './src/context/CartContext';
 
 import HomeScreen from './src/screens/HomeScreen';
 import CategoryScreen from './src/screens/CategoryScreen';
 import SearchScreen from './src/screens/SearchScreen';
 import CartScreen from './src/screens/CartScreen';
 import {CartProvider} from './src/context/CartContext';
+import { OrderProvider } from './src/context/OrderContext';
 import ProfileScreen from './src/screens/ProfileScreen';
 import Product from './src/screens/Product';
 
@@ -35,12 +37,13 @@ const MainStack = () => {
 };
 
 const HomeTabs = () => {
+  const {cartItems} = useCart();
   return (
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
         tabBarStyle: {
-          height: '7%',
+          height: '8%',
           backgroundColor: '#e86924',
           borderTopLeftRadius: 25,
           borderTopRightRadius: 25,
@@ -82,6 +85,11 @@ const HomeTabs = () => {
           tabBarIcon: ({color, size}) => (
             <Icon name="shopping-cart" size={size} color={color} />
           ),
+          tabBarBadge: cartItems.length > 0 ? cartItems.length : null,
+          tabBarBadgeStyle: {
+            backgroundColor: 'white',
+            color: '#e86924',
+          },
         }}
       />
       <Tab.Screen
@@ -100,11 +108,13 @@ const HomeTabs = () => {
 
 const App = () => {
   return (
+    <OrderProvider>
     <CartProvider>
       <NavigationContainer>
         <MainStack />
       </NavigationContainer>
     </CartProvider>
+    </OrderProvider>
   );
 };
 

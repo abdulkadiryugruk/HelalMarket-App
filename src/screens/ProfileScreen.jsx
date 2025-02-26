@@ -1,6 +1,7 @@
 import { StyleSheet, TextInput, View, Text, TouchableOpacity, Alert } from 'react-native';
 import React, { useState, useEffect } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useOrder } from '../context/OrderContext';
 
 const ProfileScreen = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +14,7 @@ const ProfileScreen = () => {
   const [isInputVisible, setIsInputVisible] = useState(false);
   const [isAddButtonVisible, setIsAddButtonVisible] = useState(true);
   const [orders, setOrders] = useState([]);
+  const { orderRefresh } = useOrder();
 
   const handleNumberChange = (text) => {
     const cleanedText = text.replace(/[^0-9]/g, '');
@@ -29,8 +31,8 @@ const ProfileScreen = () => {
       return false;
     }
 
-    if (formData.number.length !== 9) {
-      Alert.alert('Hata', 'Telefon numarası 9 haneli olmalı.');
+    if (formData.number.length !== 10) {
+      Alert.alert('Hata', 'Telefon numarası 10 haneli olmalı.');
       return false;
     }
 
@@ -64,9 +66,7 @@ const ProfileScreen = () => {
     const loadOrders = async () => {
       try {
         const savedOrders = await AsyncStorage.getItem('orders');
-        console.log('Yüklenen siparişler:', savedOrders); // Kontrol 2
         const parsedOrders = JSON.parse(savedOrders) || [];
-        console.log('Parse edilmiş siparişler:', parsedOrders); // Kontrol 3
         setOrders(parsedOrders);
       } catch (error) {
         console.log('Siparişler yüklenirken hata oluştu:', error);
@@ -74,7 +74,7 @@ const ProfileScreen = () => {
     };
 
     loadOrders();
-  }, []);
+  }, [orderRefresh]);
 
   const handleOrderPress = (order) => {
     if (!order || !order.item || !Array.isArray(order.item)) {
@@ -82,7 +82,7 @@ const ProfileScreen = () => {
       return;
     }
   
-    const orderDetails = order.item.map((item) => (   // 'items' yerine 'item' kullanıyoruz
+    const orderDetails = order.item.map((item) => (
       `${item.name} - Adet: ${item.quantity}`
     )).join("\n");
   
@@ -131,7 +131,7 @@ const ProfileScreen = () => {
         style={styles.input}
         keyboardType="number-pad"
         placeholder="Telefon Numarası"
-        maxLength={9}
+        maxLength={10}
         value={formData.number}
         onChangeText={handleNumberChange}
         placeholderTextColor="#666"
@@ -176,13 +176,13 @@ const ProfileScreen = () => {
       </TouchableOpacity>
     </View>
     <View style={[styles.savedDataContainer,{marginTop:'10%'}]}>
-    <Text style={styles.title}>Geçmiş Siparişler</Text>
+    <Text style={styles.title}>📜 Sipariş Geçmişi</Text>
       {orders.length === 0 ? (
-        <Text>Henüz siparişiniz yok.</Text>
+        <Text>Henüz siparişiniz bulunmamaktadır.</Text>
       ) : (
         orders.map((order, index) => (
           <TouchableOpacity key={index} style={styles.orderItem} onPress={() => handleOrderPress(order)}>
-            <Text style={styles.orderText}>{order.date}</Text>
+            <Text style={styles.orderText}>📅   {order.date}</Text>
           </TouchableOpacity>
         ))
       )}

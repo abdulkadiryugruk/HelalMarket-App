@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, Button, TextInput, Alert } from 'react-native';
+import { StyleSheet, Text, View, Button, TextInput, Alert, Image } from 'react-native';
 import { useCart } from '../context/CartContext'; 
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { getImageSource } from '../utils/getImageSource';
 
 const Product = ({ route, navigation }) => {
   const { product } = route.params;
@@ -30,10 +31,6 @@ const Product = ({ route, navigation }) => {
       const orders = storedOrders ? JSON.parse(storedOrders) : [];
       orders.push(newOrder);
 
-      if (orders.length > 5) {
-        orders.shift();  // Son 5 siparişi tutmak için ilkini sil
-      }
-
       await AsyncStorage.setItem('orders', JSON.stringify(orders));
       Alert.alert('Sipariş Başarıyla Kaydedildi!', `${quantity} adet ${product.name} sepete eklendi.`);
     } catch (error) {
@@ -43,7 +40,14 @@ const Product = ({ route, navigation }) => {
 
   return (
     <View style={styles.container}>
+      {/* Ürün görseli ekleniyor */}
+      <Image 
+        source={getImageSource(product.image)} 
+        style={styles.productImage} 
+      />
+
       <Text style={styles.productName}>{product.name}</Text>
+      <Text style={styles.productPrice}>{product.price} TL</Text>
 
       <TextInput
         style={styles.input}
@@ -65,10 +69,22 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: 'white',
   },
+  productImage: {
+    width: 150,
+    height: 150,
+    resizeMode: 'contain',
+    marginBottom: 20,
+  },
   productName: {
     fontSize: 22,
     fontWeight: 'bold',
     marginBottom: 10,
+  },
+  productPrice: {
+    fontSize: 18,
+    fontWeight: '500',
+    color: 'green',
+    marginBottom: 20,
   },
   input: {
     borderWidth: 1,
