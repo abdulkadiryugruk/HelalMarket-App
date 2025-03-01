@@ -84,7 +84,7 @@ const CartScreen = () => {
         />
       )}
 
-      {!hasProfileInfo && cartItems.length === 0 && (
+      {!hasProfileInfo && cartItems.length > 0 && (
         <Text style={styles.warningText}>
           ⚠️ Sipariş vermek için profil bilgilerinizi tamamlamalısınız.
         </Text>

@@ -1,6 +1,6 @@
 import {Alert} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {SendSMS} from '../utils/ForwardSMS';
+import {SendSMS} from './ForwardSMS';
 
 
 export const ConfirmCard = async (cartItems, clearCart, refreshOrders) => {
