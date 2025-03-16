@@ -1,6 +1,7 @@
 import {Alert} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {SendSMS} from './ForwardSMS';
+// import {SendSMS} from './ForwardSMS';
+import {SendWhatsApp} from './ForwardSMS';
 
 
 export const ConfirmCard = async (cartItems, clearCart, refreshOrders) => {
@@ -79,7 +80,7 @@ export const ConfirmCard = async (cartItems, clearCart, refreshOrders) => {
             text: 'Tamam',
             onPress: async () => {
               // SMS gönder
-              const smsSent = await SendSMS(cartItems);
+              const smsSent = await SendWhatsApp(cartItems);
 
               if (smsSent) {
                 // Sepeti temizle
