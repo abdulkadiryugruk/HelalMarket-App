@@ -63,7 +63,7 @@ const CartScreen = () => {
           renderItem={({item}) => (
             <View style={styles.card}>
               <TouchableOpacity
-                onPress={() => navigation.navigate('Product', {product: item})}>
+                onPress={() => navigation.navigate('ProductDetail', {product: item})}>
                 <Image
                   source={getImageSource(item.image)}
                   style={styles.productImage}
@@ -71,7 +71,7 @@ const CartScreen = () => {
               </TouchableOpacity>
               <TouchableOpacity
                 style={styles.productInfo}
-                onPress={() => navigation.navigate('Product', {product: item})}>
+                onPress={() => navigation.navigate('ProductDetail', {product: item})}>
                 <Text style={styles.productName}>{item.name}</Text>
                 <Text style={styles.productQuantity}>{item.quantity} adet</Text>
               </TouchableOpacity>

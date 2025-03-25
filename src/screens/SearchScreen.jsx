@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import { View, TextInput, FlatList, StyleSheet } from 'react-native';
-import productData from '../data/products.json';
+import React, {useState} from 'react';
+import {View, TextInput, FlatList, StyleSheet} from 'react-native';
+import productData from '../data/urunler.json';
 import ProductItem from '../components/ProductItem';
 
 const SearchScreen = () => {
   const [searchQuery, setSearchQuery] = useState('');
-  const [filteredProducts, setFilteredProducts] = useState(productData.products);
+  const [filteredProducts, setFilteredProducts] = useState(productData);
 
-  const handleSearch = (text) => {
+  const handleSearch = text => {
     setSearchQuery(text);
     if (text === '') {
-      setFilteredProducts(productData.products);
+      setFilteredProducts(productData);
     } else {
-      const filteredData = productData.products.filter((product) =>
-        product.name.toLowerCase().includes(text.toLowerCase())
+      const filteredData = productData.filter(product =>
+        product.name.toLowerCase().includes(text.toLowerCase()),
       );
       setFilteredProducts(filteredData);
     }
@@ -29,9 +29,12 @@ const SearchScreen = () => {
       />
       <FlatList
         data={filteredProducts}
-        keyExtractor={item => item.name}
+        keyExtractor={item => item.id.toString()}
         numColumns={2}
-        renderItem={({ item }) => <ProductItem item={item} />}
+        initialNumToRender={10} // İlk başta sadece 10 öğe render edilsin
+        maxToRenderPerBatch={10} // Her defasında maksimum 10 öğe render edilsin
+        windowSize={5} // Performansı artırmak için pencere boyutunu belirle
+        renderItem={({item}) => <ProductItem item={item} />}
       />
     </View>
   );

@@ -4,15 +4,16 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import {useCart} from './src/context/CartContext';
+import Toast from 'react-native-toast-message';
 
 import HomeScreen from './src/screens/HomeScreen';
-import CategoryScreen from './src/screens/CategoryScreen';
+import CategoryDetailScreen from './src/screens/CategoryDetailScreen';
 import SearchScreen from './src/screens/SearchScreen';
 import CartScreen from './src/screens/CartScreen';
 import {CartProvider} from './src/context/CartContext';
 import { OrderProvider } from './src/context/OrderContext';
 import ProfileScreen from './src/screens/ProfileScreen';
-import Product from './src/screens/Product';
+import ProductDetail from './src/screens/ProductDetail';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -22,7 +23,7 @@ const HomeStack = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="CategoryScreen" component={CategoryScreen} />
+      <Stack.Screen name="CategoryDetailScreen" component={CategoryDetailScreen} />
     </Stack.Navigator>
   );
 };
@@ -31,7 +32,7 @@ const MainStack = () => {
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
       <Stack.Screen name="HomeTabs" component={HomeTabs} />
-      <Stack.Screen name="Product" component={Product} />
+      <Stack.Screen name="ProductDetail" component={ProductDetail} />
     </Stack.Navigator>
   );
 };
@@ -109,11 +110,12 @@ const HomeTabs = () => {
 const App = () => {
   return (
     <OrderProvider>
-    <CartProvider>
-      <NavigationContainer>
-        <MainStack />
-      </NavigationContainer>
-    </CartProvider>
+      <CartProvider>
+        <NavigationContainer>
+          <MainStack />
+        </NavigationContainer>
+        <Toast />
+      </CartProvider>
     </OrderProvider>
   );
 };

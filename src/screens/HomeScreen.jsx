@@ -10,12 +10,16 @@ import {
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from '@react-navigation/native';
+import productData from '../data/urunler.json';
 
-const categories = ['Şarküteri', 'Manav', 'Bakliyat', 'Yağ'];
+
 
 const HomeScreen = () => {
   const navigation = useNavigation();
   const alertShown = useRef(false); // 📌 Alert'in tekrar çıkmasını engellemek için
+
+const Kategori = [...new Set(productData.map(item => item.kategori))];
+
 
   useEffect(() => {
     const checkCart = async () => {
@@ -54,13 +58,13 @@ const HomeScreen = () => {
       <Text style={styles.categoryTitle}>KATEGORİLER</Text>
 
       <FlatList
-        data={categories}
+        data={Kategori}
         keyExtractor={item => item}
         numColumns={2}
         renderItem={({item}) => (
           <TouchableOpacity
             style={styles.categoryButton}
-            onPress={() => navigation.navigate('CategoryScreen', {category: item})}>
+            onPress={() => navigation.navigate('CategoryDetailScreen', {category: item})}>
             <Text style={styles.buttonText}>{item}</Text>
           </TouchableOpacity>
         )}

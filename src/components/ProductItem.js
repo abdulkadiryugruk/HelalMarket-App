@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {memo} from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { getImageSource } from '../utils/getImageSource';
@@ -10,11 +10,10 @@ const ProductItem = ({ item }) => {
   return (
     <TouchableOpacity 
       style={styles.container} 
-      onPress={() => navigation.navigate('Product', { product: item })}
+      onPress={() => navigation.navigate('ProductDetail', { product: item })}
     >
       <Image source={getImageSource(item.image)} style={styles.image} />
       <Text style={styles.name}>{item.name}</Text>
-      <Text style={styles.price}>{item.price} TL</Text>
     </TouchableOpacity>
   );
 };
@@ -37,8 +36,8 @@ const styles = StyleSheet.create({
   },
   name: {
     fontSize: 16,
-    fontWeight: 'bold',
     textAlign: 'center',
+    color: 'black',
   },
   price: {
     fontSize: 14,
@@ -46,4 +45,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ProductItem;
+export default memo(ProductItem);
