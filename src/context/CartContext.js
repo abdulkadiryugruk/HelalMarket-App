@@ -38,17 +38,18 @@ export const CartProvider = ({ children }) => {
   }, [cartItems]);
 
   // ➕ Ürün ekleme fonksiyonu
-  const addToCart = (product, quantity = 1) => {
+  const addToCart = (product) => {
     setCartItems((prevItems) => {
       const existingProductIndex = prevItems.findIndex(item => item.id === product.id);
       if (existingProductIndex > -1) {
         // Ürün zaten varsa, miktarını artır
         const updatedItems = [...prevItems];
-        updatedItems[existingProductIndex].quantity += quantity;
+        // Doğrudan product.quantity'i kullan, önceki miktarı toplamak yerine
+        updatedItems[existingProductIndex].quantity = product.quantity;
         return updatedItems;
       } else {
         // Ürün yoksa, yeni ürün ekle
-        return [...prevItems, { ...product, quantity }];
+        return [...prevItems, { ...product }];
       }
     });
   };

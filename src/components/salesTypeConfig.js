@@ -1,12 +1,38 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, TextInput, Switch, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, TextInput, Switch, StyleSheet, Alert } from 'react-native';
 
 const QuantitySelector = ({ product, quantity, setQuantity, unitType, setUnitType }) => {
+  const validateAndSetQuantity = (value, type) => {
+    const numValue = parseFloat(value.replace(',', '.'));
+
+    if (product['satis-sekli'] === 'adet') {
+      // Adet ürünler için tamsayı kontrolü
+      if (!isNaN(numValue) && numValue >= 0 && Number.isInteger(numValue)) {
+        setQuantity(value);
+      }
+    } else if (product['satis-sekli'] === 'gram') {
+      const currentUnitType = type || unitType;
+      const maxValue = currentUnitType === 'gram' ? 1000 : 0;
+      const minValue = currentUnitType === 'gram' ? 10 : 0;
+
+      if (!isNaN(numValue) && numValue >= minValue && numValue <= maxValue) {
+        setQuantity(value);
+      } else {
+        Alert.alert(
+          'Geçersiz Miktar', 
+          currentUnitType === 'gram' 
+            ? `Lütfen 10 gram ile 1000 gram arasında bir değer girin.` 
+            : `Lütfen 0.1 kg ile 10 kg arasında bir değer girin.`
+        );
+      }
+    }
+  };
+
   if (product['satis-sekli'] === 'adet') {
     return (
       <View style={styles.quantitySelectorContainer}>
         <TouchableOpacity 
-          onPress={() => setQuantity(Math.max(1, parseInt(quantity) - 1).toString())}
+          onPress={() => validateAndSetQuantity((parseInt(quantity) - 1).toString(), 'adet')}
           style={styles.quantityButton}
         >
           <Text style={styles.quantityButtonText}>-</Text>
@@ -15,13 +41,10 @@ const QuantitySelector = ({ product, quantity, setQuantity, unitType, setUnitTyp
           style={styles.quantityInput}
           keyboardType="numeric"
           value={quantity}
-          onChangeText={(value) => {
-            const numValue = parseInt(value);
-            if (numValue >= 1) setQuantity(value);
-          }}
+          onChangeText={(value) => validateAndSetQuantity(value, 'adet')}
         />
         <TouchableOpacity 
-          onPress={() => setQuantity((parseInt(quantity) + 1).toString())}
+          onPress={() => validateAndSetQuantity((parseInt(quantity) + 1).toString(), 'adet')}
           style={styles.quantityButton}
         >
           <Text style={styles.quantityButtonText}>+</Text>
@@ -38,7 +61,12 @@ const QuantitySelector = ({ product, quantity, setQuantity, unitType, setUnitTyp
           <Switch
             trackColor={{ false: "#767577", true: "#81b0ff" }}
             thumbColor={unitType === 'kilo' ? "#f5dd4b" : "#f4f3f4"}
-            onValueChange={() => setUnitType(unitType === 'gram' ? 'kilo' : 'gram')}
+            onValueChange={() => {
+              const newUnitType = unitType === 'gram' ? 'kilo' : 'gram';
+              setUnitType(newUnitType);
+              // Birim değiştiğinde miktarı güncelle
+              validateAndSetQuantity(quantity, newUnitType);
+            }}
             value={unitType === 'kilo'}
           />
           <Text>Kilo</Text>
@@ -48,15 +76,7 @@ const QuantitySelector = ({ product, quantity, setQuantity, unitType, setUnitTyp
           style={styles.quantityInput}
           keyboardType="numeric"
           value={quantity}
-          onChangeText={(value) => {
-            const numValue = parseFloat(value);
-            const maxValue = unitType === 'gram' ? 1000 : 10;
-            const minValue = unitType === 'gram' ? 100 : 0.1;
-            
-            if (numValue >= minValue && numValue <= maxValue) {
-              setQuantity(value);
-            }
-          }}
+          onChangeText={(value) => validateAndSetQuantity(value)}
         />
         <Text style={styles.unitLabel}>
           {unitType === 'gram' ? 'gram' : 'kg'}

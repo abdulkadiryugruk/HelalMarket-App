@@ -1,29 +1,51 @@
 import React, { useState } from 'react';
 import { useCart } from '../context/CartContext'; 
 import { getImageSource } from '../utils/getImageSource';
-import { View, Text, TouchableOpacity, TextInput, StyleSheet, Image } from 'react-native';
+import { View, Text, TouchableOpacity, TextInput, StyleSheet, Image, Alert } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import Toast from 'react-native-toast-message';
-import QuantitySelector from '../components/salesTypeConfig'; // Yeni dosyayı import ettik
+import QuantitySelector from '../components/salesTypeConfig';
 
 const ProductDetail = ({ route, navigation }) => {
   const { product } = route.params;
   
   const [unitType, setUnitType] = useState('gram');
   const [quantity, setQuantity] = useState(
-    product['satis-sekli'] === 'adet' ? '1' : '100'
+    product['satis-sekli'] === 'adet' ? '1' : '10'
   );
 
-  const { addToCart } = useCart(); // Favorilere ekleme kaldırıldı
+  const { addToCart } = useCart();
 
   const handleAddToCart = () => {
-    const finalQuantity = product['satis-sekli'] === 'adet' 
-      ? quantity 
-      : (unitType === 'kilo' ? parseFloat(quantity) * 1000 : quantity);
+    let finalQuantity;
     
+    if (product['satis-sekli'] === 'adet') {
+      finalQuantity = parseInt(quantity, 10); // Explicitly parse as base 10
+      if (isNaN(finalQuantity) || finalQuantity < 1) {
+        Alert.alert('Hata', 'Lütfen geçerli bir adet miktarı girin.');
+        return;
+      }
+    } else if (product['satis-sekli'] === 'gram') {
+      const numValue = parseFloat(quantity.replace(',', '.')); // Remove comma, parse as float
+      const maxValue = unitType === 'gram' ? 1000 : 1;
+      const minValue = unitType === 'gram' ? 10 : 0.1;
+  
+      if (isNaN(numValue) || numValue < minValue || numValue > maxValue) {
+        Alert.alert(
+          'Geçersiz Miktar', 
+          unitType === 'gram' 
+            ? `Lütfen 10 gram ile 1000 gram arasında bir değer girin.` 
+            : `Lütfen 0.1 kg ile 10 kg arasında bir değer girin.`
+        );
+        return;
+      }
+  
+      finalQuantity = unitType === 'kilo' ? Math.round(numValue * 1000) : Math.round(numValue);
+    }
+  
     addToCart({
       ...product,
-      quantity: finalQuantity
+      quantity: finalQuantity  // Use the calculated finalQuantity directly
     });
 
     Toast.show({

@@ -40,6 +40,21 @@ const CartScreen = () => {
     checkProfileInfo();
   }, []);
 
+  const formatQuantity = (item) => {
+    const quantity = Number(item.quantity);
+  
+    switch(item['satis-sekli']) {
+      case 'adet':
+        return `${quantity} adet`;
+      case 'gram':
+        return quantity >= 1000 
+          ? `${(quantity / 1000).toFixed(2)} kg` 
+          : `${quantity} gram`;
+      default:
+        return `${quantity} birim`;
+    }
+  };
+
   const confirmDelete = (productId, productName) => {
     Alert.alert(
       'Ürünü Sil',
@@ -73,7 +88,7 @@ const CartScreen = () => {
                 style={styles.productInfo}
                 onPress={() => navigation.navigate('ProductDetail', {product: item})}>
                 <Text style={styles.productName}>{item.name}</Text>
-                <Text style={styles.productQuantity}>{item.quantity} adet</Text>
+                <Text style={styles.productQuantity}>{formatQuantity(item)}</Text>
               </TouchableOpacity>
               <TouchableOpacity
                 onPress={() => confirmDelete(item.id, item.name)}>

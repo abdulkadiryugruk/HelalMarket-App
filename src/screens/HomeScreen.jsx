@@ -88,9 +88,9 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 25,
   },
   TopBarTitle: {
-    fontSize: 35,
-    color: '#008242',
-    fontWeight: 'bold',
+    fontSize: 40,
+    color: 'white',
+    fontWeight: '900',
   },
   categoryTitle: {
     fontSize: 20,
