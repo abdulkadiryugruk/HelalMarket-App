@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
+import { 
+  View, Text, TouchableOpacity, StyleSheet, Image, Alert, KeyboardAvoidingView, ScrollView, Platform, ToastAndroid
+} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
+import QuantitySelector from '../components/salesTypeConfig';
 import { useCart } from '../context/CartContext'; 
 import { getImageSource } from '../utils/getImageSource';
-import { View, Text, TouchableOpacity, TextInput, StyleSheet, Image, Alert } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
-import Toast from 'react-native-toast-message';
-import QuantitySelector from '../components/salesTypeConfig';
 
 const ProductDetail = ({ route, navigation }) => {
   const { product } = route.params;
   
   const [unitType, setUnitType] = useState('gram');
   const [quantity, setQuantity] = useState(
-    product['satis-sekli'] === 'adet' ? '1' : '10'
+    product['satis-sekli'] === 'adet' ? '1' : '100'
   );
 
   const { addToCart } = useCart();
@@ -20,21 +21,21 @@ const ProductDetail = ({ route, navigation }) => {
     let finalQuantity;
     
     if (product['satis-sekli'] === 'adet') {
-      finalQuantity = parseInt(quantity, 10); // Explicitly parse as base 10
+      finalQuantity = parseInt(quantity, 10);
       if (isNaN(finalQuantity) || finalQuantity < 1) {
         Alert.alert('Hata', 'Lütfen geçerli bir adet miktarı girin.');
         return;
       }
     } else if (product['satis-sekli'] === 'gram') {
-      const numValue = parseFloat(quantity.replace(',', '.')); // Remove comma, parse as float
-      const maxValue = unitType === 'gram' ? 1000 : 1;
-      const minValue = unitType === 'gram' ? 10 : 0.1;
+      const numValue = parseFloat(quantity.replace(',', '.'));
+      const maxValue = unitType === 'gram' ? 1000 : 10; // Kilo için max 10 kg
+      const minValue = unitType === 'gram' ? 100 : 0.1;
   
       if (isNaN(numValue) || numValue < minValue || numValue > maxValue) {
         Alert.alert(
           'Geçersiz Miktar', 
           unitType === 'gram' 
-            ? `Lütfen 10 gram ile 1000 gram arasında bir değer girin.` 
+            ? `Lütfen 100 gram ile 1000 gram arasında bir değer girin.` 
             : `Lütfen 0.1 kg ile 10 kg arasında bir değer girin.`
         );
         return;
@@ -45,16 +46,15 @@ const ProductDetail = ({ route, navigation }) => {
   
     addToCart({
       ...product,
-      quantity: finalQuantity  // Use the calculated finalQuantity directly
+      quantity: finalQuantity
     });
-
-    Toast.show({
-      type: 'success',
-      text1: 'Sepete Eklendi',
-      text2: `${product.name} sepetinize eklendi 👋`,
-      visibilityTime: 2000,
-      autoHide: true,
-    });
+    ToastAndroid.showWithGravityAndOffset(
+                    `${product.name} sepetinize eklendi 👋`,
+                    ToastAndroid.LONG,
+                    ToastAndroid.BOTTOM,
+                    25,
+                    50
+                  );
 
     navigation.goBack();
   };
@@ -72,32 +72,36 @@ const ProductDetail = ({ route, navigation }) => {
         <View style={styles.headerButton} />
       </View>
 
-      {/* Ürün Görseli */}
+      {/* Ürün Görseli (Sabit Kalacak) */}
       <Image source={getImageSource(product.image)} style={styles.productImage} />
 
-      {/* Ürün İsmi */}
-      <Text style={styles.productName}>{product.name}</Text>
+      {/* Klavye Açıldığında Kayacak Alanlar */}
+      <KeyboardAvoidingView 
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+        style={styles.keyboardAvoidingContainer}
+      >
+        <ScrollView contentContainerStyle={styles.scrollContainer}>
+          <Text style={styles.productName}>{product.name}</Text>
 
-      {/* Miktar Seçici */}
-      <View style={styles.quantityContainer}>
-        <Text style={styles.quantityTitle}>Miktar Seç</Text>
-        <QuantitySelector 
-          product={product}
-          quantity={quantity}
-          setQuantity={setQuantity}
-          unitType={unitType}
-          setUnitType={setUnitType}
-        />
-      </View>
+          <View style={styles.bottomContainer}>
+            <View style={styles.quantityContainer}>
+              <Text style={styles.quantityTitle}>Miktar Seç</Text>
+              <QuantitySelector 
+                product={product}
+                quantity={quantity}
+                setQuantity={setQuantity}
+                unitType={unitType}
+                setUnitType={setUnitType}
+              />
+            </View>
 
-      {/* Sepete Ekle Butonu */}
-      <TouchableOpacity style={styles.addToCartButton} onPress={handleAddToCart}>
-        <Icon name="shopping-cart" size={24} color="#fff" />
-        <Text style={styles.addToCartButtonText}>Sepete Ekle</Text>
-      </TouchableOpacity>
-
-      {/* Toast Bildirimi */}
-      <Toast />
+            <TouchableOpacity style={styles.addToCartButton} onPress={handleAddToCart}>
+              <Icon name="shopping-cart" size={24} color="#fff" />
+              <Text style={styles.addToCartButtonText}>Sepete Ekle</Text>
+            </TouchableOpacity>
+          </View>
+        </ScrollView>
+      </KeyboardAvoidingView>
     </View>
   );
 };
@@ -105,7 +109,7 @@ const ProductDetail = ({ route, navigation }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
     alignItems: 'center',
   },
   header: {
@@ -129,23 +133,38 @@ const styles = StyleSheet.create({
     width: '90%',
     height: 300,
     resizeMode: 'contain',
-    marginVertical: 20,
+    marginVertical: 10,
+    marginTop: '10%',
+  },
+  keyboardAvoidingContainer: {
+    flex: 1,
+    width: '100%',
+  },
+  scrollContainer: {
+    flexGrow: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   productName: {
-    fontSize: 20,
+    fontSize: 30,
     fontWeight: 'bold',
     textAlign: 'center',
     marginBottom: 10,
+    color: 'black',
   },
   quantityContainer: {
-    width: '90%',
+    width: '100%',
     alignItems: 'center',
     marginBottom: 20,
   },
   quantityTitle: {
-    fontSize: 16,
+    fontSize: 23,
     fontWeight: 'bold',
     marginBottom: 10,
+    color: 'red',
+    backgroundColor: 'white',
+    width: '100%',
+    textAlign: 'center',
   },
   addToCartButton: {
     flexDirection: 'row',
@@ -158,9 +177,14 @@ const styles = StyleSheet.create({
   },
   addToCartButtonText: {
     color: '#fff',
-    fontSize: 16,
+    fontSize: 25,
     fontWeight: 'bold',
     marginLeft: 10,
+  },
+  bottomContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '100%',
   },
 });
 

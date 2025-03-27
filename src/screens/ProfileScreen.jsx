@@ -237,7 +237,8 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     borderWidth: 1,
     borderColor: '#ddd',
-    fontSize: 16,
+    fontSize: 20,
+    color: '#333',
   },
   addressInput: {
     height: 120,
@@ -248,8 +249,9 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     borderWidth: 1,
     borderColor: '#ddd',
-    fontSize: 16,
+    fontSize: 20,
     textAlignVertical: 'top',
+    color: '#333',
   },
   button: {
     height: 50,
@@ -292,12 +294,12 @@ const styles = StyleSheet.create({
     marginBottom: 15,
   },
   fieldLabel: {
-    fontSize: 14,
+    fontSize: 16,
     color: '#666',
     marginBottom: 5,
   },
   fieldValue: {
-    fontSize: 16,
+    fontSize: 20,
     color: '#333',
     fontWeight: '500',
   },

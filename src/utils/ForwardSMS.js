@@ -9,9 +9,14 @@ export const SendWhatsApp = async (cartItems) => {
     const address = await AsyncStorage.getItem('address') || 'Belirtilmemiş';
 
     // Sipariş detaylarını al
-    const orderDetails = cartItems.map(item =>
-      `•  ${item.name}: ${item.quantity} adet`
-    ).join('\n');
+    const orderDetails = cartItems.map(item => {
+      let unit = "adet";
+      if (item["satis-sekli"] === "gram") {
+        unit = item.unitType === "kilo" ? "kg" : "gram";
+      }
+      return ` ${item.name}: ${item.quantity} ${unit}`;
+    }).join("\n");
+    
 
     const phoneNumber = '905516042200'
     
@@ -21,16 +26,48 @@ export const SendWhatsApp = async (cartItems) => {
     // Google Maps linkini oluştur
     const mapsLink = `https://maps.google.com/maps?q=${encodeURIComponent(formattedAddress)}`;
     
+    const dateTimeString = () => {
+      const now = new Date();
+      
+      // Türkçe ay isimleri
+      const months = [
+        'OCAK', 'ŞUBAT', 'MART', 'NİSAN', 'MAYIS', 'HAZİRAN', 
+        'TEMMUZ', 'AĞUSTOS', 'EYLÜL', 'EKİM', 'KASIM', 'ARALIK'
+      ];
+      
+      // Günü ve ayı al
+      const day = now.getDate();
+      const month = months[now.getMonth()];
+      
+      // Saati formatla
+      const hours = now.getHours().toString().padStart(2, '0');
+      const minutes = now.getMinutes().toString().padStart(2, '0');
+      return `${day} ${month} | ${hours}:${minutes}`;
+    };
+
+
+    // const message = 
+    //   `YENİ SİPARİŞ\n` +
+    //   `${new Date().toLocaleString('tr-TR')}\n\n` +
+    //   `MÜŞTERİ BİLGİLERİ:\n` +
+    //   `Ad Soyad: ${name}\n` +
+    //   `Telefon: ${number}\n` +
+    //   `Adres: ${address}\n\n` +
+    //   `Haritada görmek için:\n${mapsLink}\n\n` +
+    //   `SİPARİŞ DETAYLARI:\n` +
+    //   `${orderDetails}\n`;
     const message = 
-      `YENİ SİPARİŞ\n` +
-      `${new Date().toLocaleString('tr-TR')}\n\n` +
-      `MÜŞTERİ BİLGİLERİ:\n` +
-      `Ad Soyad: ${name}\n` +
-      `Telefon: ${number}\n` +
-      `Adres: ${address}\n\n` +
-      `Haritada görmek için:\n${mapsLink}\n\n` +
-      `SİPARİŞ DETAYLARI:\n` +
-      `${orderDetails}\n`;
+  `📌 *YENİ SİPARİŞ*\n` +
+  `🕒 *${dateTimeString()}*\n\n` +
+  `👤 *MÜŞTERİ BİLGİLERİ*\n` +
+  `📛 *Ad Soyad:* ${name}\n` +
+  `📞 *Telefon:* ${number}\n` +
+  `🏠 *Adres:* ${address}\n\n` +
+  `📍 *Konumu Haritada Görmek İçin:*\n` +
+  `🔗 ${mapsLink}\n\n` +
+  `🛒 *SİPARİŞ DETAYLARI*\n` +
+  `${orderDetails.split('\n').map(line => `📦 ${line}`).join('\n')}\n`;
+
     
     console.log("WhatsApp mesajı gönderilmeye çalışılıyor...");
     

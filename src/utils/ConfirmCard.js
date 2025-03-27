@@ -74,7 +74,7 @@ export const ConfirmCard = async (cartItems, clearCart, refreshOrders) => {
 
       Alert.alert(
         'Sipariş Kaydedildi',
-        'Siparişiniz başarıyla kaydedildi. SMS ekranına yönlendiriliyorsunuz!',
+        'Siparişiniz başarıyla kaydedildi. WhatsApp ekranına yönlendiriliyorsunuz!',
         [
           {
             text: 'Tamam',
@@ -88,7 +88,7 @@ export const ConfirmCard = async (cartItems, clearCart, refreshOrders) => {
               } else {
                 Alert.alert(
                   'Uyarı',
-                  'SMS ekranı açılamadı. Lütfen daha sonra tekrar deneyin.',
+                  'WhatsApp ekranı açılamadı. Lütfen daha sonra tekrar deneyin.',
                 );
               }
             },

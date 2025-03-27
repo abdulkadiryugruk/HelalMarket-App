@@ -42,10 +42,9 @@ export const CartProvider = ({ children }) => {
     setCartItems((prevItems) => {
       const existingProductIndex = prevItems.findIndex(item => item.id === product.id);
       if (existingProductIndex > -1) {
-        // Ürün zaten varsa, miktarını artır
+        // Ürün zaten varsa, miktarını topla
         const updatedItems = [...prevItems];
-        // Doğrudan product.quantity'i kullan, önceki miktarı toplamak yerine
-        updatedItems[existingProductIndex].quantity = product.quantity;
+        updatedItems[existingProductIndex].quantity += product.quantity;
         return updatedItems;
       } else {
         // Ürün yoksa, yeni ürün ekle
