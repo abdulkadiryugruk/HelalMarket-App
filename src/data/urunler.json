@@ -194,7 +194,7 @@
     {
         "id":17,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"cips",
+        "alt-kategori":"Cips",
         "name":"Aficips Acı Biber Misket Limonlu Mısır Cipsi 40 Gr",
         "4. sutun":"",
         "birim":"",
@@ -206,7 +206,7 @@
     {
         "id":18,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"cips",
+        "alt-kategori":"Cips",
         "name":"Aficips Baharatlı Mısır Cipsi 50 Gr",
         "4. sutun":"",
         "birim":"",
@@ -218,7 +218,7 @@
     {
         "id":19,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"cips",
+        "alt-kategori":"Cips",
         "name":"Aficips Ketçaplı Mısır Cipsi 50 Gr",
         "4. sutun":"",
         "birim":"",
@@ -230,7 +230,7 @@
     {
         "id":20,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"cips",
+        "alt-kategori":"Cips",
         "name":"Aficips Nacho Peynirli Mısır Cipsi 40 Gr",
         "4. sutun":"",
         "birim":"",
@@ -242,7 +242,7 @@
     {
         "id":21,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"cips",
+        "alt-kategori":"Cips",
         "name":"Aficips Peynirli Mısır Cipsi 50 Gr",
         "4. sutun":"",
         "birim":"",
@@ -254,7 +254,7 @@
     {
         "id":22,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"cips",
+        "alt-kategori":"Cips",
         "name":"Aficips Yoğurt Mevsim Yeşillikli Mısır Cipsi 40 Gr",
         "4. sutun":"",
         "birim":"",
@@ -266,7 +266,7 @@
     {
         "id":23,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"cips",
+        "alt-kategori":"Cips",
         "name":"Afia Kobys Crunch Ketçap Aromalı Mısır Cipsi 50 Gr",
         "4. sutun":"",
         "birim":"",
@@ -278,7 +278,7 @@
     {
         "id":24,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"cips",
+        "alt-kategori":"Cips",
         "name":"Afia Kobys Crunch Peynir Aromalı Mısır Cipsi 50 Gr",
         "4. sutun":"",
         "birim":"",
@@ -290,7 +290,7 @@
     {
         "id":25,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"cips",
+        "alt-kategori":"Cips",
         "name":"Afia Kobys Crunch Taco Aromalı Mısır Cipsi 50 Gr",
         "4. sutun":"",
         "birim":"",
@@ -302,7 +302,7 @@
     {
         "id":26,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"cips",
+        "alt-kategori":"Cips",
         "name":"Tatarası Sade Patates Cipsi 70 Gr",
         "4. sutun":"",
         "birim":"",
@@ -314,7 +314,7 @@
     {
         "id":27,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"cips",
+        "alt-kategori":"Cips",
         "name":"Tatarası Süt Mısır Çeşnili Mısır Cipsi 50 Gr",
         "4. sutun":"",
         "birim":"",
@@ -326,7 +326,7 @@
     {
         "id":28,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"cips",
+        "alt-kategori":"Cips",
         "name":"Tatarası Yer Fıstığı Çeşnili Mısır Cipsi 50 Gr",
         "4. sutun":"",
         "birim":"",
@@ -338,7 +338,7 @@
     {
         "id":29,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"cips",
+        "alt-kategori":"Cips",
         "name":"Tatarası Yoğurtlu Mevsim Yeşillikli Patates Cipsi 70 Gr",
         "4. sutun":"",
         "birim":"",
@@ -350,7 +350,7 @@
     {
         "id":30,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"gofret",
+        "alt-kategori":"Gofret",
         "name":"Kutu Afia Çikolatalı Gofret 35 Gr 24 Adet",
         "4. sutun":"",
         "birim":"",
@@ -374,7 +374,7 @@
     {
         "id":32,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"gofret",
+        "alt-kategori":"Gofret",
         "name":"Tatarasi Fındıklı Gofret",
         "4. sutun":"",
         "birim":"",
@@ -386,7 +386,7 @@
     {
         "id":33,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"gofret",
+        "alt-kategori":"Gofret",
         "name":"Tatarasi Hindistan Cevizli Gofret",
         "4. sutun":"",
         "birim":"",
@@ -398,7 +398,7 @@
     {
         "id":34,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"gofret",
+        "alt-kategori":"Gofret",
         "name":"Tatarasi Kakaolu Gofret",
         "4. sutun":"",
         "birim":"",
@@ -422,7 +422,7 @@
     {
         "id":36,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"gofret",
+        "alt-kategori":"Gofret",
         "name":"Afia Tatlı Dost Fındıklı Kakao Kremalı Gofret 140 Gr",
         "4. sutun":"",
         "birim":"",
@@ -434,7 +434,7 @@
     {
         "id":37,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"gofret",
+        "alt-kategori":"Gofret",
         "name":"Afia Tatlı Dost Hindistan Cevizli Gofret 140 Gr",
         "4. sutun":"",
         "birim":"",
@@ -446,7 +446,7 @@
     {
         "id":38,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"gofret",
+        "alt-kategori":"Gofret",
         "name":"Afia Tatlı Dost Kakao Kremalı Gofret 140 Gr",
         "4. sutun":"",
         "birim":"",
@@ -458,7 +458,7 @@
     {
         "id":39,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"gofret",
+        "alt-kategori":"Gofret",
         "name":"Afia Tatlı Dost Limon Kremalı Gofret 140 Gr",
         "4. sutun":"",
         "birim":"",
@@ -470,7 +470,7 @@
     {
         "id":40,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"gofret",
+        "alt-kategori":"Gofret",
         "name":"Afia Tatlı Dost Muz Kremalı Gofret 140 Gr",
         "4. sutun":"",
         "birim":"",
@@ -482,7 +482,7 @@
     {
         "id":41,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"gofret",
+        "alt-kategori":"Gofret",
         "name":"Afia Tatlı Dost Vanilya Kremalı Gofret 140 Gr",
         "4. sutun":"",
         "birim":"",
@@ -494,7 +494,7 @@
     {
         "id":42,
         "kategori":"ATIŞTIRMALIK",
-        "alt-kategori":"gofret",
+        "alt-kategori":"Gofret",
         "name":"Afia Vanilya Kremalı Kakaolu Sandviç Bisküvi 400 Gr",
         "4. sutun":"",
         "birim":"",
@@ -2199,11 +2199,11 @@
         "id":184,
         "kategori":"BİTKİSEL YAĞLAR & VİTAMİNLER",
         "alt-kategori":"Vitaminler",
-        "name":"5 Htp Vitamin B6 Özel Takviyeler Humaliva 48 20 O",
+        "name":"Humaliva 5 Htp Vitamin B6 Özel Takviyeler 48 20 O",
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"adet",
-        "image":"kategoriler/bitkisel-yaglar-vitaminler/vitaminler/humaliva-5-htp-vitamin-b6-ozel-takviyeler-48-20-O.webp",
+        "image":"kategoriler/bitkisel-yaglar-vitaminler/vitaminler/humaliva-5-htp-vitamin-b6-ozel-takviyeler-48-20-o.webp",
         "8. sutun":"",
         "9. sutun":""
     },
@@ -3631,7 +3631,7 @@
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"gram",
-        "image":"kategoriler/et-sut-sarkuteri/kirmizi-et/dana parca-yagsiz.webp",
+        "image":"kategoriler/et-sut-sarkuteri/kirmizi-et/dana-parca-yagsiz.webp",
         "8. sutun":"",
         "9. sutun":""
     },
@@ -4814,7 +4814,7 @@
     {
         "id":402,
         "kategori":"KAHVALTILIK",
-        "alt-kategori":"bal-recel",
+        "alt-kategori":"Bal & Reçel",
         "name":"Atiye Laçin Çıtır Kabak Reçeli 300Gr",
         "4. sutun":"",
         "birim":"",
@@ -4826,7 +4826,7 @@
     {
         "id":403,
         "kategori":"KAHVALTILIK",
-        "alt-kategori":"bal-recel",
+        "alt-kategori":"Bal & Reçel",
         "name":"Süzme Çam Balı 850Gr",
         "4. sutun":"",
         "birim":"",
@@ -4838,7 +4838,7 @@
     {
         "id":404,
         "kategori":"KAHVALTILIK",
-        "alt-kategori":"bal-recel",
+        "alt-kategori":"Bal & Reçel",
         "name":"Süzme Çiçek Balı 850Gr",
         "4. sutun":"",
         "birim":"",
@@ -4850,7 +4850,7 @@
     {
         "id":405,
         "kategori":"KAHVALTILIK",
-        "alt-kategori":"bal-recel",
+        "alt-kategori":"Bal & Reçel",
         "name":"Tatşen Cam Reçel Çilek 380Gr",
         "4. sutun":"",
         "birim":"",
@@ -4862,7 +4862,7 @@
     {
         "id":406,
         "kategori":"KAHVALTILIK",
-        "alt-kategori":"bal-recel",
+        "alt-kategori":"Bal & Reçel",
         "name":"Tatşen Cam Reçel Çilek 800Gr",
         "4. sutun":"",
         "birim":"",
@@ -4874,7 +4874,7 @@
     {
         "id":407,
         "kategori":"KAHVALTILIK",
-        "alt-kategori":"bal-recel",
+        "alt-kategori":"Bal & Reçel",
         "name":"Tatşen Cam Reçel Gül 800Gr",
         "4. sutun":"",
         "birim":"",
@@ -4886,7 +4886,7 @@
     {
         "id":408,
         "kategori":"KAHVALTILIK",
-        "alt-kategori":"bal-recel",
+        "alt-kategori":"Bal & Reçel",
         "name":"Tatşen Cam Reçel İncir 380Gr",
         "4. sutun":"",
         "birim":"",
@@ -4898,7 +4898,7 @@
     {
         "id":409,
         "kategori":"KAHVALTILIK",
-        "alt-kategori":"bal-recel",
+        "alt-kategori":"Bal & Reçel",
         "name":"Tatşen Cam Reçel İncir 800Gr",
         "4. sutun":"",
         "birim":"",
@@ -4910,7 +4910,7 @@
     {
         "id":410,
         "kategori":"KAHVALTILIK",
-        "alt-kategori":"bal-recel",
+        "alt-kategori":"Bal & Reçel",
         "name":"Tatşen Cam Reçel Kayısı 380Gr",
         "4. sutun":"",
         "birim":"",
@@ -4922,7 +4922,7 @@
     {
         "id":411,
         "kategori":"KAHVALTILIK",
-        "alt-kategori":"bal-recel",
+        "alt-kategori":"Bal & Reçel",
         "name":"Tatşen Cam Reçel Kayısı 800Gr",
         "4. sutun":"",
         "birim":"",
@@ -4934,7 +4934,7 @@
     {
         "id":412,
         "kategori":"KAHVALTILIK",
-        "alt-kategori":"bal-recel",
+        "alt-kategori":"Bal & Reçel",
         "name":"Tatşen Cam Reçel Vişne 380Gr",
         "4. sutun":"",
         "birim":"",
@@ -4946,7 +4946,7 @@
     {
         "id":413,
         "kategori":"KAHVALTILIK",
-        "alt-kategori":"bal-recel",
+        "alt-kategori":"Bal & Reçel",
         "name":"Tatşen Cam Reçel Vişne 800Gr",
         "4. sutun":"",
         "birim":"",
@@ -4958,7 +4958,7 @@
     {
         "id":414,
         "kategori":"KAHVALTILIK",
-        "alt-kategori":"bal-recel",
+        "alt-kategori":"Bal & Reçel",
         "name":"Tatşen Cam Reçel Gül 800Gr",
         "4. sutun":"",
         "birim":"",
@@ -5894,7 +5894,7 @@
     {
         "id":493,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Agarta Çocuk Diş Macunu 75 Ml",
         "4. sutun":"",
         "birim":"",
@@ -5906,7 +5906,7 @@
     {
         "id":494,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Agarta Diş Macunu 100 Ml",
         "4. sutun":"",
         "birim":"",
@@ -5918,7 +5918,7 @@
     {
         "id":495,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Agarta Diş Macunu Mockup 2",
         "4. sutun":"",
         "birim":"",
@@ -5930,7 +5930,7 @@
     {
         "id":496,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Agarta Doğal Hindistan Cevizi Özlü Aktif Karbon Diş Macunu 100 Ml",
         "4. sutun":"",
         "birim":"",
@@ -5942,7 +5942,7 @@
     {
         "id":497,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Agarta Doğal Misvak Özlü Diş Macunu 100 ml 130 Gr",
         "4. sutun":"",
         "birim":"",
@@ -5954,7 +5954,7 @@
     {
         "id":498,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Agarta Doğal Propolis Diş Macunu 100 ml 130 Gr",
         "4. sutun":"",
         "birim":"",
@@ -5966,7 +5966,7 @@
     {
         "id":499,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Bab-ı Şifa Gül Diş Macunu 140 Gr",
         "4. sutun":"",
         "birim":"",
@@ -5978,7 +5978,7 @@
     {
         "id":500,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Bab-ı Şifa Karanfil Diş Macunu 140 Gr",
         "4. sutun":"",
         "birim":"",
@@ -5990,7 +5990,7 @@
     {
         "id":501,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Bab-ı Şifa Misvak Diş Macunu 140 Gr",
         "4. sutun":"",
         "birim":"",
@@ -6002,8 +6002,8 @@
     {
         "id":502,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
-        "name":"Babi Şifa Aktif Karbon Bitkisel Diş Macunu 140 Gr",
+        "alt-kategori":"Ağız Bakım",
+        "name":"Bab-ı Şifa Aktif Karbon Bitkisel Diş Macunu 140 Gr",
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"adet",
@@ -6014,8 +6014,8 @@
     {
         "id":503,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
-        "name":"Babi Şifa Udi Hindi Diş Macunu 140 Gr",
+        "alt-kategori":"Ağız Bakım",
+        "name":"Bab-ı Şifa Udi Hindi Diş Macunu 140 Gr",
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"adet",
@@ -6026,7 +6026,7 @@
     {
         "id":504,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Babı Şifa Ağız Bakım Suyu Karanfil Ferahlığı 290 Ml",
         "4. sutun":"",
         "birim":"",
@@ -6038,7 +6038,7 @@
     {
         "id":505,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Babı Şifa Ağız Bakım Suyu Mentol Ferahlığı 290 Ml",
         "4. sutun":"",
         "birim":"",
@@ -6050,7 +6050,7 @@
     {
         "id":506,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Feradisin Aloe Vera Özlü Diş Macunu 75 Ml",
         "4. sutun":"",
         "birim":"",
@@ -6062,7 +6062,7 @@
     {
         "id":507,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Feradisin Aloe Vera Özlü Doğal Diş Macunu 75 ml 90 Gr",
         "4. sutun":"",
         "birim":"",
@@ -6074,7 +6074,7 @@
     {
         "id":508,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Feradisin Çocuk Diş Macunu 50 Ml",
         "4. sutun":"",
         "birim":"",
@@ -6086,7 +6086,7 @@
     {
         "id":509,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Feradisin Misvak Diş Macunu 75 ml 90 Gr",
         "4. sutun":"",
         "birim":"",
@@ -6098,7 +6098,7 @@
     {
         "id":510,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Feradisin Naneli Diş Macunu 75 ml 90 Gr",
         "4. sutun":"",
         "birim":"",
@@ -6110,7 +6110,7 @@
     {
         "id":511,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Naturalive Çocuk Diş Fırçası Ağız Bakım Ürünleri",
         "4. sutun":"",
         "birim":"",
@@ -6122,7 +6122,7 @@
     {
         "id":512,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Naturalive Çocuk Diş Macunu Ağız Bakım Ürünleri",
         "4. sutun":"",
         "birim":"",
@@ -6134,7 +6134,7 @@
     {
         "id":513,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Naturalive Doğal Diş Macunu Ağız Bakım Ürünleri",
         "4. sutun":"",
         "birim":"",
@@ -6146,7 +6146,7 @@
     {
         "id":514,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Naturalive Yetişkin Diş Fırçası Ağız Bakım Ürünleri",
         "4. sutun":"",
         "birim":"",
@@ -6158,7 +6158,7 @@
     {
         "id":515,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Safia 11 Yetişkin Diş Fırçası",
         "4. sutun":"",
         "birim":"",
@@ -6170,7 +6170,7 @@
     {
         "id":516,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Safia Çocuk Diş Macunu 60 Ml",
         "4. sutun":"",
         "birim":"",
@@ -6182,7 +6182,7 @@
     {
         "id":517,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Safia Çocuk Yumuşak Soft Diş Fırçası",
         "4. sutun":"",
         "birim":"",
@@ -6194,7 +6194,7 @@
     {
         "id":518,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Safia Diş Macunu Misvak ve Propolis 100 Ml",
         "4. sutun":"",
         "birim":"",
@@ -6206,7 +6206,7 @@
     {
         "id":519,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Safia Diş Macunu Misvak ve Propolis 60 Ml",
         "4. sutun":"",
         "birim":"",
@@ -6218,7 +6218,7 @@
     {
         "id":520,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Safia Diş Macunu Yeşil Çay ve Himalaya Tuzu 100 Ml",
         "4. sutun":"",
         "birim":"",
@@ -6230,7 +6230,7 @@
     {
         "id":521,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Safia Diş Macunu Yeşil Çay ve Himalaya Tuzu 60 Ml",
         "4. sutun":"",
         "birim":"",
@@ -6242,7 +6242,7 @@
     {
         "id":522,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Safia Karanfil ve Hindistan Cevizli Organik Diş Macunu 100 Ml",
         "4. sutun":"",
         "birim":"",
@@ -6254,7 +6254,7 @@
     {
         "id":523,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Safia Nane ve Hindistan Cevizli Organik Diş Macunu 100 Ml",
         "4. sutun":"",
         "birim":"",
@@ -6266,7 +6266,7 @@
     {
         "id":524,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"agiz-bakim",
+        "alt-kategori":"Ağız Bakım",
         "name":"Safia Tekli Yetişkin Orta Diş Fırçası",
         "4. sutun":"",
         "birim":"",
@@ -6902,7 +6902,7 @@
     {
         "id":577,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"deodorant",
+        "alt-kategori":"Deodorant",
         "name":"Naturalive Deodorant Stick Deodorant Çeşitleri",
         "4. sutun":"",
         "birim":"",
@@ -6914,7 +6914,7 @@
     {
         "id":578,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"deodorant",
+        "alt-kategori":"Deodorant",
         "name":"Naturalive Deodorant Roll On Deodorant Çeşitleri",
         "4. sutun":"",
         "birim":"",
@@ -6926,7 +6926,7 @@
     {
         "id":579,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"deodorant",
+        "alt-kategori":"Deodorant",
         "name":"Naturalive Portakallı Deodorant Stick Deodorant Çeşitleri",
         "4. sutun":"",
         "birim":"",
@@ -6938,7 +6938,7 @@
     {
         "id":580,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"deodorant",
+        "alt-kategori":"Deodorant",
         "name":"Yeşil Marka Doğal Deodorant Bergamot",
         "4. sutun":"",
         "birim":"",
@@ -6950,7 +6950,7 @@
     {
         "id":581,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"deodorant",
+        "alt-kategori":"Deodorant",
         "name":"Yeşil Marka Doğal Deodorant Gül",
         "4. sutun":"",
         "birim":"",
@@ -6962,7 +6962,7 @@
     {
         "id":582,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"deodorant",
+        "alt-kategori":"Deodorant",
         "name":"Yeşil Marka Doğal Deodorant Kokusuz",
         "4. sutun":"",
         "birim":"",
@@ -6974,7 +6974,7 @@
     {
         "id":583,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"deodorant",
+        "alt-kategori":"Deodorant",
         "name":"Yeşil Marka Doğal Deodorant Lavanta",
         "4. sutun":"",
         "birim":"",
@@ -6986,7 +6986,7 @@
     {
         "id":584,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"deodorant",
+        "alt-kategori":"Deodorant",
         "name":"Yeşil Marka Doğal Deodorant Portakal",
         "4. sutun":"",
         "birim":"",
@@ -6998,7 +6998,7 @@
     {
         "id":585,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"deodorant",
+        "alt-kategori":"Deodorant",
         "name":"Yeşil Marka Doğal Deodorant Pürüzsüzleştirici",
         "4. sutun":"",
         "birim":"",
@@ -7010,7 +7010,7 @@
     {
         "id":586,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"parfum-esans",
+        "alt-kategori":"Parfüm  & Esans",
         "name":"Aksa Alkolsüz Parfüm 50 ml (Çeşitleri)",
         "4. sutun":"",
         "birim":"",
@@ -7022,7 +7022,7 @@
     {
         "id":587,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"parfum-esans",
+        "alt-kategori":"Parfüm  & Esans",
         "name":"Aksa Diriliş Sprey Parfüm 50 cc",
         "4. sutun":"",
         "birim":"",
@@ -7034,7 +7034,7 @@
     {
         "id":588,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"parfum-esans",
+        "alt-kategori":"Parfüm  & Esans",
         "name":"Aksa Esanskokusu Parfüm 50 cc (Çeşitleri)",
         "4. sutun":"",
         "birim":"",
@@ -7046,7 +7046,7 @@
     {
         "id":589,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"parfum-esans",
+        "alt-kategori":"Parfüm  & Esans",
         "name":"Aksa Sürme Klasik Esans Meryem 5 cc",
         "4. sutun":"",
         "birim":"",
@@ -7058,7 +7058,7 @@
     {
         "id":590,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"parfum-esans",
+        "alt-kategori":"Parfüm  & Esans",
         "name":"Buhara Parfüm Çeşitleri 50 Ml",
         "4. sutun":"",
         "birim":"",
@@ -7070,7 +7070,7 @@
     {
         "id":591,
         "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"parfum-esans",
+        "alt-kategori":"Parfüm  & Esans",
         "name":"Hasimi Esans 15 ml (Çeşitleri)",
         "4. sutun":"",
         "birim":"",
@@ -8331,7 +8331,7 @@
         "id":696,
         "kategori":"KİŞİSEL BAKIM",
         "alt-kategori":"Saç Bakım",
-        "name":"Babi Şifa Bitkisel Vitamin Kompleks Şampuan 400 ml",
+        "name":"Bab-ı Şifa Bitkisel Vitamin Kompleks Şampuan 400 ml",
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"adet",
@@ -8966,7 +8966,7 @@
     {
         "id":749,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Aşurelik Buğday 1000g",
         "4. sutun":"",
         "birim":"",
@@ -8978,7 +8978,7 @@
     {
         "id":750,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Baldo Pirinç 1000Gr",
         "4. sutun":"",
         "birim":"",
@@ -8990,7 +8990,7 @@
     {
         "id":751,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Baldo Pirinç 2000Gr",
         "4. sutun":"",
         "birim":"",
@@ -9002,7 +9002,7 @@
     {
         "id":752,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Barbunya Fasulye 1000Gr",
         "4. sutun":"",
         "birim":"",
@@ -9014,7 +9014,7 @@
     {
         "id":753,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Başbaşı Bulgur 1000g",
         "4. sutun":"",
         "birim":"",
@@ -9026,7 +9026,7 @@
     {
         "id":754,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Basmati Pirinç 1000Gr",
         "4. sutun":"",
         "birim":"",
@@ -9038,7 +9038,7 @@
     {
         "id":755,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Börülce 1000Gr",
         "4. sutun":"",
         "birim":"",
@@ -9050,7 +9050,7 @@
     {
         "id":756,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Çiğ Köftelik Bulgur 1000g",
         "4. sutun":"",
         "birim":"",
@@ -9062,7 +9062,7 @@
     {
         "id":757,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Dermason Fasulye",
         "4. sutun":"",
         "birim":"",
@@ -9074,7 +9074,7 @@
     {
         "id":758,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Esmer Çiğ Köftelik Bulgur 1000g",
         "4. sutun":"",
         "birim":"",
@@ -9086,7 +9086,7 @@
     {
         "id":759,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Esmer Pilavlık Bulgur 1000g",
         "4. sutun":"",
         "birim":"",
@@ -9098,7 +9098,7 @@
     {
         "id":760,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Futbol Mercimek 1000g",
         "4. sutun":"",
         "birim":"",
@@ -9110,7 +9110,7 @@
     {
         "id":761,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Hazır Barbunya Pilaki 400Gr",
         "4. sutun":"",
         "birim":"",
@@ -9122,7 +9122,7 @@
     {
         "id":762,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru İri Nohut 1000Gr",
         "4. sutun":"",
         "birim":"",
@@ -9134,7 +9134,7 @@
     {
         "id":763,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru İri Pilavlık Bulgur 1000g",
         "4. sutun":"",
         "birim":"",
@@ -9146,7 +9146,7 @@
     {
         "id":764,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Karabuğday Grecka 1000Gr",
         "4. sutun":"",
         "birim":"",
@@ -9158,7 +9158,7 @@
     {
         "id":765,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Kepekli Köftelik Bulgur 1000g",
         "4. sutun":"",
         "birim":"",
@@ -9170,7 +9170,7 @@
     {
         "id":766,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Kepekli Pilavlık Bulgur 1000",
         "4. sutun":"",
         "birim":"",
@@ -9182,7 +9182,7 @@
     {
         "id":767,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Kırık Pirinç 1000g",
         "4. sutun":"",
         "birim":"",
@@ -9194,7 +9194,7 @@
     {
         "id":768,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Koçbaşı Nohut 8mm 1000Gr",
         "4. sutun":"",
         "birim":"",
@@ -9206,7 +9206,7 @@
     {
         "id":769,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Koçbaşı Nohut 9mm 1000Gr",
         "4. sutun":"",
         "birim":"",
@@ -9218,7 +9218,7 @@
     {
         "id":770,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Köftelik Bulgur 1000g",
         "4. sutun":"",
         "birim":"",
@@ -9230,7 +9230,7 @@
     {
         "id":771,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Kuru Fasulye 6mm 1Kg",
         "4. sutun":"",
         "birim":"",
@@ -9242,7 +9242,7 @@
     {
         "id":772,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Kurufasulye 7mm 1000Gr",
         "4. sutun":"",
         "birim":"",
@@ -9254,7 +9254,7 @@
     {
         "id":773,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Midyat İnce Pilavlık Bulgur 1000g",
         "4. sutun":"",
         "birim":"",
@@ -9266,7 +9266,7 @@
     {
         "id":774,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Osmancık Pirinç 2000Gr",
         "4. sutun":"",
         "birim":"",
@@ -9278,7 +9278,7 @@
     {
         "id":775,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Osmancıkpirinç 1000Gr",
         "4. sutun":"",
         "birim":"",
@@ -9290,7 +9290,7 @@
     {
         "id":776,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Patlayan Mısır 1000g",
         "4. sutun":"",
         "birim":"",
@@ -9302,7 +9302,7 @@
     {
         "id":777,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Pilavlık Bulgur 1000g",
         "4. sutun":"",
         "birim":"",
@@ -9314,7 +9314,7 @@
     {
         "id":778,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Pratik Bezelye 450Gr",
         "4. sutun":"",
         "birim":"",
@@ -9326,7 +9326,7 @@
     {
         "id":779,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Pratik Ezogelin Çorbası 250ml",
         "4. sutun":"",
         "birim":"",
@@ -9338,7 +9338,7 @@
     {
         "id":780,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Pratik Fasulye 400Gr",
         "4. sutun":"",
         "birim":"",
@@ -9350,7 +9350,7 @@
     {
         "id":781,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Pratik Haşlanmış Barbunya 400Gr",
         "4. sutun":"",
         "birim":"",
@@ -9362,7 +9362,7 @@
     {
         "id":782,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Pratik Haşlanmış Börülce 400Gr",
         "4. sutun":"",
         "birim":"",
@@ -9374,7 +9374,7 @@
     {
         "id":783,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Pratik Kırmızı Fasulye 400Gr",
         "4. sutun":"",
         "birim":"",
@@ -9386,7 +9386,7 @@
     {
         "id":784,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Pratik Mercimek Çorbası 250ml",
         "4. sutun":"",
         "birim":"",
@@ -9398,7 +9398,7 @@
     {
         "id":785,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Pratik Mısır 3x400Gr",
         "4. sutun":"",
         "birim":"",
@@ -9410,7 +9410,7 @@
     {
         "id":786,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Pratik Mısır 400Gr",
         "4. sutun":"",
         "birim":"",
@@ -9422,7 +9422,7 @@
     {
         "id":787,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Pratik Nohut 400Gr",
         "4. sutun":"",
         "birim":"",
@@ -9434,7 +9434,7 @@
     {
         "id":788,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Sefer Kitel İçli Köftelik 1000g",
         "4. sutun":"",
         "birim":"",
@@ -9446,7 +9446,7 @@
     {
         "id":789,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Şehriyeli Pilavlık Bulgur 1000g",
         "4. sutun":"",
         "birim":"",
@@ -9458,7 +9458,7 @@
     {
         "id":790,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Yaprak Mercimek 1000Gr",
         "4. sutun":"",
         "birim":"",
@@ -9470,7 +9470,7 @@
     {
         "id":791,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Yerli Pilavlık Pirinç 1000g",
         "4. sutun":"",
         "birim":"",
@@ -9482,7 +9482,7 @@
     {
         "id":792,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Duru Yerli Yeşil Mercimek 1000Gr",
         "4. sutun":"",
         "birim":"",
@@ -9494,7 +9494,7 @@
     {
         "id":793,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Kartal Arpa Şehriye 500Gr",
         "4. sutun":"",
         "birim":"",
@@ -9506,7 +9506,7 @@
     {
         "id":794,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Makarna",
         "name":"Kartal İnce Uzun Makarna 500Gr",
         "4. sutun":"",
         "birim":"",
@@ -9518,8 +9518,8 @@
     {
         "id":795,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
-        "name":"Kartal Makarna Tel Şehriye 500Gr",
+        "alt-kategori":"Bakliyat",
+        "name":"Kartal Tel Şehriye 500Gr",
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"adet",
@@ -9530,7 +9530,7 @@
     {
         "id":796,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Nuhun Ankara İrmik 500Gr",
         "4. sutun":"",
         "birim":"",
@@ -9542,7 +9542,7 @@
     {
         "id":797,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Nuhun Ankara Makarna Arpa Şehriye",
         "4. sutun":"",
         "birim":"",
@@ -9554,7 +9554,7 @@
     {
         "id":798,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Nuhun Ankara Makarna Kuskus",
         "4. sutun":"",
         "birim":"",
@@ -9566,7 +9566,7 @@
     {
         "id":799,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"bakliyat",
+        "alt-kategori":"Bakliyat",
         "name":"Nuhun Ankara Makarna Tel Şehriye",
         "4. sutun":"",
         "birim":"",
@@ -9578,7 +9578,7 @@
     {
         "id":800,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Dudomi Bardak Dana Eti Çeşneli 60 Gr",
         "4. sutun":"",
         "birim":"",
@@ -9590,7 +9590,7 @@
     {
         "id":801,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Dudomi Bardak Korili 60 Gr",
         "4. sutun":"",
         "birim":"",
@@ -9602,7 +9602,7 @@
     {
         "id":802,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Dudomi Bardak Tavuk Çeşneli 60 Gr",
         "4. sutun":"",
         "birim":"",
@@ -9614,7 +9614,7 @@
     {
         "id":803,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Dudomi Dana Eti Çeşnili Noodle 70 Gr",
         "4. sutun":"",
         "birim":"",
@@ -9626,7 +9626,7 @@
     {
         "id":804,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Dudomi Korili Noodle 5li Poşet 5x70 Gr",
         "4. sutun":"",
         "birim":"",
@@ -9638,7 +9638,7 @@
     {
         "id":805,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Dudomi Sebze Çeşnili Noodle 70 Gr",
         "4. sutun":"",
         "birim":"",
@@ -9650,7 +9650,7 @@
     {
         "id":806,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Dudomi Tavuk Çeşnili Noodle 70 Gr",
         "4. sutun":"",
         "birim":"",
@@ -9662,7 +9662,7 @@
     {
         "id":807,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Dudomi Tavuklu Noodle 5li Poşet 5x70 Gr",
         "4. sutun":"",
         "birim":"",
@@ -9674,7 +9674,7 @@
     {
         "id":808,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Kartal Burgu Makarna 500Gr",
         "4. sutun":"",
         "birim":"",
@@ -9686,7 +9686,7 @@
     {
         "id":809,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Kartal İnce Uzun Makarna 500Gr",
         "4. sutun":"",
         "birim":"",
@@ -9698,7 +9698,7 @@
     {
         "id":810,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Kartal Makarna Boncuk 500Gr",
         "4. sutun":"",
         "birim":"",
@@ -9710,7 +9710,7 @@
     {
         "id":811,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Kartal Makarna Mantı 500Gr",
         "4. sutun":"",
         "birim":"",
@@ -9722,7 +9722,7 @@
     {
         "id":812,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Kartal Makarna Pagetti 500Gr",
         "4. sutun":"",
         "birim":"",
@@ -9734,7 +9734,7 @@
     {
         "id":813,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Nuhun Ankara Makarna Burgu",
         "4. sutun":"",
         "birim":"",
@@ -9746,7 +9746,7 @@
     {
         "id":814,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Nuhun Ankara Makarna Dirsek",
         "4. sutun":"",
         "birim":"",
@@ -9758,7 +9758,7 @@
     {
         "id":815,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Nuhun Ankara Makarna Erişte",
         "4. sutun":"",
         "birim":"",
@@ -9770,7 +9770,7 @@
     {
         "id":816,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Nuhun Ankara Makarna Fırın Makarna",
         "4. sutun":"",
         "birim":"",
@@ -9782,7 +9782,7 @@
     {
         "id":817,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Nuhun Ankara Makarna Fiyonk",
         "4. sutun":"",
         "birim":"",
@@ -9794,7 +9794,7 @@
     {
         "id":818,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Nuhun Ankara Makarna Kelebek",
         "4. sutun":"",
         "birim":"",
@@ -9806,7 +9806,7 @@
     {
         "id":819,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Nuhun Ankara Makarna Mantı",
         "4. sutun":"",
         "birim":"",
@@ -9818,7 +9818,7 @@
     {
         "id":820,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Nuhun Ankara Makarna Penne",
         "4. sutun":"",
         "birim":"",
@@ -9830,7 +9830,7 @@
     {
         "id":821,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Nuhun Ankara Makarna Spaghetti",
         "4. sutun":"",
         "birim":"",
@@ -9842,7 +9842,7 @@
     {
         "id":822,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Nuhun Ankara Makarna Yassı Spaghetti",
         "4. sutun":"",
         "birim":"",
@@ -9854,7 +9854,7 @@
     {
         "id":823,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Nuhun Ankara Makarna Yüksük",
         "4. sutun":"",
         "birim":"",
@@ -9866,7 +9866,7 @@
     {
         "id":824,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"makarna",
+        "alt-kategori":"Makarna",
         "name":"Nuhun Ankara Sebzeli Nuhun Gemisi 350Gr",
         "4. sutun":"",
         "birim":"",
@@ -10166,7 +10166,7 @@
     {
         "id":849,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"salca-sos",
+        "alt-kategori":"Salça & Sos",
         "name":"Afia Acılı Ketçap 600 Gr",
         "4. sutun":"",
         "birim":"",
@@ -10178,7 +10178,7 @@
     {
         "id":850,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"salca-sos",
+        "alt-kategori":"Salça & Sos",
         "name":"Afia Mayonez 550 Gr",
         "4. sutun":"",
         "birim":"",
@@ -10190,7 +10190,7 @@
     {
         "id":851,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"salca-sos",
+        "alt-kategori":"Salça & Sos",
         "name":"Afia Tatlı Ketçap 600 Gr",
         "4. sutun":"",
         "birim":"",
@@ -10202,7 +10202,7 @@
     {
         "id":852,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"salca-sos",
+        "alt-kategori":"Salça & Sos",
         "name":"Burcu Acı Biber Salçası 320Gr",
         "4. sutun":"",
         "birim":"",
@@ -10214,7 +10214,7 @@
     {
         "id":853,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"salca-sos",
+        "alt-kategori":"Salça & Sos",
         "name":"Burcu Domates Salçası 830Gr",
         "4. sutun":"",
         "birim":"",
@@ -10226,7 +10226,7 @@
     {
         "id":854,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"salca-sos",
+        "alt-kategori":"Salça & Sos",
         "name":"Burcu Domates Salçası Cam 1500Gr",
         "4. sutun":"",
         "birim":"",
@@ -10238,7 +10238,7 @@
     {
         "id":855,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"salca-sos",
+        "alt-kategori":"Salça & Sos",
         "name":"Burcu Tatlı Biber Salçası 320Gr",
         "4. sutun":"",
         "birim":"",
@@ -10262,7 +10262,7 @@
     {
         "id":857,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"salca-sos",
+        "alt-kategori":"Salça & Sos",
         "name":"Tatarasi Mayonez 550Gr",
         "4. sutun":"",
         "birim":"",
@@ -10274,7 +10274,7 @@
     {
         "id":858,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"salca-sos",
+        "alt-kategori":"Salça & Sos",
         "name":"Tatarasi Sade Ketçap 600Gr",
         "4. sutun":"",
         "birim":"",
@@ -10286,7 +10286,7 @@
     {
         "id":859,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"sirke",
+        "alt-kategori":"Sirke",
         "name":"Afia Alic Sirkesi 1000 Ml",
         "4. sutun":"",
         "birim":"",
@@ -10298,7 +10298,7 @@
     {
         "id":860,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"sirke",
+        "alt-kategori":"Sirke",
         "name":"Afia Alic Sirkesi Cam Şişe 500 Ml",
         "4. sutun":"",
         "birim":"",
@@ -10310,7 +10310,7 @@
     {
         "id":861,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"sirke",
+        "alt-kategori":"Sirke",
         "name":"Afia Bal Sirkesi 05 Lt",
         "4. sutun":"",
         "birim":"",
@@ -10322,7 +10322,7 @@
     {
         "id":862,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"sirke",
+        "alt-kategori":"Sirke",
         "name":"Afia Elma Sirkesi Cam Şişe 1 Lt",
         "4. sutun":"",
         "birim":"",
@@ -10334,7 +10334,7 @@
     {
         "id":863,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"sirke",
+        "alt-kategori":"Sirke",
         "name":"Afia Elma Sirkesi Cam Şişe 500 Ml",
         "4. sutun":"",
         "birim":"",
@@ -10346,7 +10346,7 @@
     {
         "id":864,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"sirke",
+        "alt-kategori":"Sirke",
         "name":"Afia Enginar Sirkesi 500 Ml",
         "4. sutun":"",
         "birim":"",
@@ -10358,7 +10358,7 @@
     {
         "id":865,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"sirke",
+        "alt-kategori":"Sirke",
         "name":"Afia Limon Sirkesi 500 Ml",
         "4. sutun":"",
         "birim":"",
@@ -10370,7 +10370,7 @@
     {
         "id":866,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"sirke",
+        "alt-kategori":"Sirke",
         "name":"Afia Üzüm Sirkesi 500 Ml",
         "4. sutun":"",
         "birim":"",
@@ -10382,7 +10382,7 @@
     {
         "id":867,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"sirke",
+        "alt-kategori":"Sirke",
         "name":"Afia Üzüm Sirkesi 1000 Ml",
         "4. sutun":"",
         "birim":"",
@@ -10394,7 +10394,7 @@
     {
         "id":868,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"sirke",
+        "alt-kategori":"Sirke",
         "name":"Orgamut Doğal Fermente Alic Sirkesi 500ml",
         "4. sutun":"",
         "birim":"",
@@ -10406,7 +10406,7 @@
     {
         "id":869,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"sirke",
+        "alt-kategori":"Sirke",
         "name":"Orgamut Doğal Fermente Elma Sirkesi 500ml",
         "4. sutun":"",
         "birim":"",
@@ -10418,7 +10418,7 @@
     {
         "id":870,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"sirke",
+        "alt-kategori":"Sirke",
         "name":"Orgamut Doğal Fermente Üzüm Sirkesi 500ml",
         "4. sutun":"",
         "birim":"",
@@ -10430,7 +10430,7 @@
     {
         "id":871,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"tuz-baharat",
+        "alt-kategori":"Tuz & Baharat",
         "name":  "Horoz Tuz İri 3Kg",
         "4. sutun":"",
         "birim":"",
@@ -10442,7 +10442,7 @@
     {
         "id":872,
         "kategori":"TEMEL GIDA",
-        "alt-kategori":"tuz-baharat",
+        "alt-kategori":"Tuz & Baharat",
         "name":  "Horoz Tuz İyotlu Sofra Tuzu 750Gr",
         "4. sutun":"",
         "birim":"",
@@ -10766,8 +10766,8 @@
     {
         "id":899,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
-        "name":  "Babi Şifa Bitkisel Bulaşık Makina Deterjanı 2000ml",
+        "alt-kategori":"Bulaşık Deterjanları",
+        "name":  "Bab-ı Şifa Bitkisel Bulaşık Makina Deterjanı 2000ml",
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"adet",
@@ -10778,8 +10778,8 @@
     {
         "id":900,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
-        "name":  "Babi Şifa Bulaşık Makinesi Tableti 50Adet",
+        "alt-kategori":"Bulaşık Deterjanları",
+        "name":  "Bab-ı Şifa Bulaşık Makinesi Tableti 50 Adet",
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"adet",
@@ -10790,8 +10790,8 @@
     {
         "id":901,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
-        "name":  "Babi Şifa Elde Bulaşık Deterjanı Nar 2 Litre",
+        "alt-kategori":"Bulaşık Deterjanları",
+        "name":  "Bab-ı Şifa Elde Bulaşık Deterjanı Nar 2 L",
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"adet",
@@ -10802,8 +10802,8 @@
     {
         "id":902,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
-        "name":  "Babi Şifa Limonlu Elde Bulaşık Deterjanı 750ml",
+        "alt-kategori":"Bulaşık Deterjanları",
+        "name":  "Bab-ı Şifa Limonlu Elde Bulaşık Deterjanı 750ml",
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"adet",
@@ -10814,8 +10814,8 @@
     {
         "id":903,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
-        "name":  "Babi Şifa Narlı Elde Bulaşık Deterjanı 750ml",
+        "alt-kategori":"Bulaşık Deterjanları",
+        "name":  "Bab-ı Şifa Narlı Elde Bulaşık Deterjanı 750ml",
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"adet",
@@ -10826,8 +10826,8 @@
     {
         "id":904,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
-        "name":  "Babi Şifa Sıvı Bulaşık Makinesi Deterjanı Limon 2Litre",
+        "alt-kategori":"Bulaşık Deterjanları",
+        "name":  "Bab-ı Şifa Sıvı Bulaşık Makinesi Deterjanı Limon 2L",
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"adet",
@@ -10838,7 +10838,7 @@
     {
         "id":905,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
+        "alt-kategori":"Bulaşık Deterjanları",
         "name":  "Bingo Bulaşık Deterjanı 4Kg",
         "4. sutun":"",
         "birim":"",
@@ -10850,7 +10850,7 @@
     {
         "id":906,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
+        "alt-kategori":"Bulaşık Deterjanları",
         "name":  "Bingo Klasik Limon Kokulu Sıvı Bulaşık Deterjanı 730ml",
         "4. sutun":"",
         "birim":"",
@@ -10862,7 +10862,7 @@
     {
         "id":907,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
+        "alt-kategori":"Bulaşık Deterjanları",
         "name":  "Feradisin Bulaşık Parlatıcısı 500ml",
         "4. sutun":"",
         "birim":"",
@@ -10874,7 +10874,7 @@
     {
         "id":908,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
+        "alt-kategori":"Bulaşık Deterjanları",
         "name":  "Feradisin Elde Bulaşık Deterjanı 1 Lt",
         "4. sutun":"",
         "birim":"",
@@ -10886,7 +10886,7 @@
     {
         "id":909,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
+        "alt-kategori":"Bulaşık Deterjanları",
         "name":  "Feradisin Sıvı Bulaşık Makinesi Deterjanı 2000ml",
         "4. sutun":"",
         "birim":"",
@@ -10898,7 +10898,7 @@
     {
         "id":910,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
+        "alt-kategori":"Bulaşık Deterjanları",
         "name":  "Glisten Bulaşık Makinesi Tableti 50Li",
         "4. sutun":"",
         "birim":"",
@@ -10910,7 +10910,7 @@
     {
         "id":911,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
+        "alt-kategori":"Bulaşık Deterjanları",
         "name":  "Horoz Tuz Bulaşık Makinesi Tuzu 1.5Kg",
         "4. sutun":"",
         "birim":"",
@@ -10922,7 +10922,7 @@
     {
         "id":912,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
+        "alt-kategori":"Bulaşık Deterjanları",
         "name":  "Naturalive Bulaşık Makinesi Deterjanı 1000 Ml",
         "4. sutun":"",
         "birim":"",
@@ -10934,7 +10934,7 @@
     {
         "id":913,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
+        "alt-kategori":"Bulaşık Deterjanları",
         "name":  "Naturalive Elde Bulaşık Deterjanı 2500 Ml",
         "4. sutun":"",
         "birim":"",
@@ -10946,7 +10946,7 @@
     {
         "id":914,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
+        "alt-kategori":"Bulaşık Deterjanları",
         "name":  "Naturalive Elde Bulaşık Deterjanı 750 Ml",
         "4. sutun":"",
         "birim":"",
@@ -10958,7 +10958,7 @@
     {
         "id":915,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
+        "alt-kategori":"Bulaşık Deterjanları",
         "name":  "Porcoz Bulaşık Deterjanı Limon Ferahlığı",
         "4. sutun":"",
         "birim":"",
@@ -10970,7 +10970,7 @@
     {
         "id":916,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
+        "alt-kategori":"Bulaşık Deterjanları",
         "name":  "Porcoz Bulaşık Elde Yıkama Deterjanı Aloevera 675ml",
         "4. sutun":"",
         "birim":"",
@@ -10982,7 +10982,7 @@
     {
         "id":917,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
+        "alt-kategori":"Bulaşık Deterjanları",
         "name":  "Safia Bitkisel Elde Bulaşık Temizleyicisi 1 Lt",
         "4. sutun":"",
         "birim":"",
@@ -10994,7 +10994,7 @@
     {
         "id":918,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
+        "alt-kategori":"Bulaşık Deterjanları",
         "name":  "Safia Bulaşık Makina Parlatıcısı 500 Ml",
         "4. sutun":"",
         "birim":"",
@@ -11006,8 +11006,8 @@
     {
         "id":919,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
-        "name":  "Safia Elde Bulaşık Temizleyicisi 25 Lt",
+        "alt-kategori":"Bulaşık Deterjanları",
+        "name":  "Safia Elde Bulaşık Temizleyicisi 2.5 Lt",
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"adet",
@@ -11018,7 +11018,7 @@
     {
         "id":920,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"bulasik-deterjanlari",
+        "alt-kategori":"Bulaşık Deterjanları",
         "name":  "Safia Sıvı Bulaşık Makine Deterjanı 1 Lt",
         "4. sutun":"",
         "birim":"",
@@ -11594,7 +11594,7 @@
     {
         "id":968,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"pecete-cesitleri",
+        "alt-kategori":"Peçete Çeşitleri",
         "name":  "Berrak Peçete 100 Adet",
         "4. sutun":"",
         "birim":"",
@@ -11606,7 +11606,7 @@
     {
         "id":969,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"pecete-cesitleri",
+        "alt-kategori":"Peçete Çeşitleri",
         "name":  "Familia Cep Mendili 10lu",
         "4. sutun":"",
         "birim":"",
@@ -11618,7 +11618,7 @@
     {
         "id":970,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"pecete-cesitleri",
+        "alt-kategori":"Peçete Çeşitleri",
         "name":  "Familia Kağıt Cep Mendili 3 Katlı",
         "4. sutun":"",
         "birim":"",
@@ -11630,7 +11630,7 @@
     {
         "id":971,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"pecete-cesitleri",
+        "alt-kategori":"Peçete Çeşitleri",
         "name":  "Familia Plus 3 Katlı Kağıt Havlu 12li",
         "4. sutun":"",
         "birim":"",
@@ -11642,7 +11642,7 @@
     {
         "id":972,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"pecete-cesitleri",
+        "alt-kategori":"Peçete Çeşitleri",
         "name":  "Familia Plus 3 Katlı Natural Tuvalet Kağıdı 40lı",
         "4. sutun":"",
         "birim":"",
@@ -11654,7 +11654,7 @@
     {
         "id":973,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"pecete-cesitleri",
+        "alt-kategori":"Peçete Çeşitleri",
         "name":  "Familia Plus 3 Katlı Tuvalet Kağıdı 32li",
         "4. sutun":"",
         "birim":"",
@@ -11666,7 +11666,7 @@
     {
         "id":974,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"pecete-cesitleri",
+        "alt-kategori":"Peçete Çeşitleri",
         "name":  "Familia Plus Parfüm Kokulu 3 Katlı Tuvalet Kağıdı 32li",
         "4. sutun":"",
         "birim":"",
@@ -11678,7 +11678,7 @@
     {
         "id":975,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"pecete-cesitleri",
+        "alt-kategori":"Peçete Çeşitleri",
         "name":  "Maylo 3 Katlı Kağıt Havlu 12li",
         "4. sutun":"",
         "birim":"",
@@ -11690,7 +11690,7 @@
     {
         "id":976,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"pecete-cesitleri",
+        "alt-kategori":"Peçete Çeşitleri",
         "name":  "Maylo 3 Katlı Kağıt Havlu 6lı",
         "4. sutun":"",
         "birim":"",
@@ -11702,7 +11702,7 @@
     {
         "id":977,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"pecete-cesitleri",
+        "alt-kategori":"Peçete Çeşitleri",
         "name":  "Maylo 3 Katlı Tuvalet Kağıdı 32li",
         "4. sutun":"",
         "birim":"",
@@ -11714,7 +11714,7 @@
     {
         "id":978,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"pecete-cesitleri",
+        "alt-kategori":"Peçete Çeşitleri",
         "name":  "Maylo Peçete 100 Adet",
         "4. sutun":"",
         "birim":"",
@@ -12219,7 +12219,7 @@
         "id":1020,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
         "alt-kategori":"Çamaşır Deterjanı",
-        "name":  "Babisifa Konsantre Çamaşır Deterjanı Beyazlar İçin 2lt",
+        "name":  "Bab-ısifa Konsantre Çamaşır Deterjanı Beyazlar İçin 2lt",
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"adet",
@@ -12231,7 +12231,7 @@
         "id":1021,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
         "alt-kategori":"Çamaşır Deterjanı",
-        "name":  "Babisifa Konsantre Çamaşır Deterjanı Renkliler İçin 2lt",
+        "name":  "Bab-ısifa Konsantre Çamaşır Deterjanı Renkliler İçin 2lt",
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"adet",
@@ -12243,7 +12243,7 @@
         "id":1022,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
         "alt-kategori":"Çamaşır Deterjanı",
-        "name":  "Babisifa Konsantre Çamaşır Deterjanı Siyahlar İçin 2lt",
+        "name":  "Bab-ısifa Konsantre Çamaşır Deterjanı Siyahlar İçin 2lt",
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"adet",
@@ -12602,7 +12602,7 @@
     {
         "id":1052,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"cop-torbasi",
+        "alt-kategori":"Çöp Torbası",
         "name":  "Stepy Battal Boy Ekstra Kalın Premium Çöp Poşeti 10 Lu",
         "4. sutun":"",
         "birim":"",
@@ -12614,7 +12614,7 @@
     {
         "id":1053,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"cop-torbasi",
+        "alt-kategori":"Çöp Torbası",
         "name":  "Stepy Çöp Torbası Battal Boy 72x95 Cm 10 Lu",
         "4. sutun":"",
         "birim":"",
@@ -12626,7 +12626,7 @@
     {
         "id":1054,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"cop-torbasi",
+        "alt-kategori":"Çöp Torbası",
         "name":  "Stepy Çöp Torbası Mini Boy Şeffaf 40x50 30 Adet",
         "4. sutun":"",
         "birim":"",
@@ -12638,7 +12638,7 @@
     {
         "id":1055,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"cop-torbasi",
+        "alt-kategori":"Çöp Torbası",
         "name":  "Stepy Çöp Torbası Ekonomik Orta Boy 15 Li",
         "4. sutun":"",
         "birim":"",
@@ -12650,7 +12650,7 @@
     {
         "id":1056,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"cop-torbasi",
+        "alt-kategori":"Çöp Torbası",
         "name":  "Stepy Çöp Torbası Premium Orta Boy 55x60 15 Li",
         "4. sutun":"",
         "birim":"",
@@ -12662,7 +12662,7 @@
     {
         "id":1057,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"cop-torbasi",
+        "alt-kategori":"Çöp Torbası",
         "name":  "Stepy Jumbo Boy Ekstra Kalın Çöp Torbası 80x110",
         "4. sutun":"",
         "birim":"",
@@ -12674,7 +12674,7 @@
     {
         "id":1058,
         "kategori":"TEMİZLİK ÜRÜNLERİ",
-        "alt-kategori":"cop-torbasi",
+        "alt-kategori":"Çöp Torbası",
         "name":  "Stepy Standart Boy Çöp Torbası 10 Lu",
         "4. sutun":"",
         "birim":"",
@@ -13730,7 +13730,7 @@
     {
         "id":1146,
         "kategori":"İÇECEKLER",
-        "alt-kategori":"salgam",
+        "alt-kategori":"Şalgam",
         "name":  "Ali Göde Şalgam 1 Litre Şalgam",
         "4. sutun":"",
         "birim":"",
@@ -13742,7 +13742,7 @@
     {
         "id":1147,
         "kategori":"İÇECEKLER",
-        "alt-kategori":"salgam",
+        "alt-kategori":"Şalgam",
         "name":  "Ali Göde Şalgam 330 Ml Şalgam",
         "4. sutun":"",
         "birim":"",
@@ -13754,7 +13754,7 @@
     {
         "id":1148,
         "kategori":"İÇECEKLER",
-        "alt-kategori":"salgam",
+        "alt-kategori":"Şalgam",
         "name":  "Ali Göde Şalgam 5 Litre Şalgam",
         "4. sutun":"",
         "birim":"",

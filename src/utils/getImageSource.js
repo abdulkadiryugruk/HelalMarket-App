@@ -1,4 +1,3 @@
-
 const imageMappings = {
   'atistirmalik/biskuvi/afia-vanilya-kremali-sandvic-biskuvi-400-gr.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/biskuvi/afia-vanilya-kremali-sandvic-biskuvi-400-gr.webp`),
   'atistirmalik/biskuvi/afibis-kakao-krema-dolgulu-biskuvi-75-gr.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/biskuvi/afibis-kakao-krema-dolgulu-biskuvi-75-gr.webp`),
@@ -30,8 +29,8 @@ const imageMappings = {
   'atistirmalik/cips/tatarasi-yer-fistigi-cesnili-misir-cips-50gr.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/cips/tatarasi-yer-fistigi-cesnili-misir-cips-50gr.webp`),
   'atistirmalik/cips/tatarasi-yogurtlu-mevsim-yesillikli-patates-cips-70gr.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/cips/tatarasi-yogurtlu-mevsim-yesillikli-patates-cips-70gr.webp`),
   'atistirmalik/gofret/kutu-afia-cikolatali-gofret-35-gr-24-adet.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/gofret/kutu-afia-cikolatali-gofret-35-gr-24-adet.webp`),
-  'atistirmalik/biskuvi/tatarasi-sutlu-petibor-biskuvi': require(`../../assets/productsImages/kategoriler/atistirmalik/biskuvi/tatarasi-sutlu-petibor-biskuvi`),
-  'atistirmalik/tatarasi-findikli-gofret.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/tatarasi-findikli-gofret.webp`),
+  'atistirmalik/biskuvi/tatarasi-sutlu-petibor-biskuvi.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/biskuvi/tatarasi-sutlu-petibor-biskuvi.webp`),
+  'atistirmalik/tatarasi-findikli-gofret.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/gofret/tatarasi-findikli-gofret.webp`),
   'atistirmalik/gofret/tatarasi-hindistan-cevizli-gofret.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/gofret/tatarasi-hindistan-cevizli-gofret.webp`),
   'atistirmalik/gofret/tatarasi-kakaolu-gofret.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/gofret/tatarasi-kakaolu-gofret.webp`),
   'atistirmalik/gofret/sutlu-finger-biskuvi-140-gr.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/gofret/sutlu-finger-biskuvi-140-gr.webp`),
@@ -302,7 +301,7 @@ const imageMappings = {
   'kategoriler/et-sut-sarkuteri/beyaz-et/toros_manti_500gr.webp': require(`../../assets/productsImages/kategoriler/et-sut-sarkuteri/beyaz-et/toros_manti_500gr.webp`),
   'kategoriler/et-sut-sarkuteri/beyaz-et/toros_tavuk_doner-250gr.webp': require(`../../assets/productsImages/kategoriler/et-sut-sarkuteri/beyaz-et/toros_tavuk_doner-250gr.webp`),
   'kategoriler/et-sut-sarkuteri/kirmizi-et/akdeniz_toros_sucuk_pili_250_g.webp': require(`../../assets/productsImages/kategoriler/et-sut-sarkuteri/kirmizi-et/akdeniz_toros_sucuk_pili_250_g.webp`),
-  'kategoriler/et-sut-sarkuteri/kirmizi-et/dana parca-yagsiz.webp': require(`../../assets/productsImages/kategoriler/et-sut-sarkuteri/kirmizi-et/dana parca-yagsiz.webp`),
+  'kategoriler/et-sut-sarkuteri/kirmizi-et/dana-parca-yagsiz.webp': require(`../../assets/productsImages/kategoriler/et-sut-sarkuteri/kirmizi-et/dana-parca-yagsiz.webp`),
   'kategoriler/et-sut-sarkuteri/kirmizi-et/dana-antrikot.webp': require(`../../assets/productsImages/kategoriler/et-sut-sarkuteri/kirmizi-et/dana-antrikot.webp`),
   'kategoriler/et-sut-sarkuteri/kirmizi-et/dana-biftek.webp': require(`../../assets/productsImages/kategoriler/et-sut-sarkuteri/kirmizi-et/dana-biftek.webp`),
   'kategoriler/et-sut-sarkuteri/kirmizi-et/dana-bonfile.webp': require(`../../assets/productsImages/kategoriler/et-sut-sarkuteri/kirmizi-et/dana-bonfile.webp`),
