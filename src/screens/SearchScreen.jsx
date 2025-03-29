@@ -23,7 +23,8 @@ const SearchScreen = () => {
     <View style={styles.container}>
       <TextInput
         style={styles.searchBar}
-        placeholder="Ürün ara..."
+        placeholder='Ürün Ara...'
+        placeholderTextColor='gray'
         value={searchQuery}
         onChangeText={handleSearch}
       />
@@ -31,9 +32,9 @@ const SearchScreen = () => {
         data={filteredProducts}
         keyExtractor={item => item.id.toString()}
         numColumns={2}
-        initialNumToRender={10} // İlk başta sadece 10 öğe render edilsin
-        maxToRenderPerBatch={10} // Her defasında maksimum 10 öğe render edilsin
-        windowSize={5} // Performansı artırmak için pencere boyutunu belirle
+        initialNumToRender={10}
+        maxToRenderPerBatch={10}
+        windowSize={5}
         renderItem={({item}) => <ProductItem item={item} />}
       />
     </View>
@@ -53,6 +54,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     paddingLeft: 10,
     marginBottom: 20,
+
   },
 });
 

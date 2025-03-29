@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   Alert,
   Image,
+  AppState,
 } from 'react-native';
 import {useCart} from '../context/CartContext';
 import Icon from 'react-native-vector-icons/MaterialIcons';
@@ -14,7 +15,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import {useOrder} from '../context/OrderContext';
 import {getImageSource} from '../utils/getImageSource';
 import {ConfirmCard} from '../utils/ConfirmCard';
-import {useNavigation} from '@react-navigation/native';
+import {useNavigation, useFocusEffect} from '@react-navigation/native';
 
 const CartScreen = () => {
   const {cartItems, removeFromCart, clearCart} = useCart();
@@ -22,23 +23,50 @@ const CartScreen = () => {
   const {refreshOrders} = useOrder();
   const navigation = useNavigation();
   const Confirm = () => ConfirmCard(cartItems, clearCart, refreshOrders);
+  const [appState, setAppState] = useState(AppState.currentState);
 
   // Profil bilgilerini kontrol et
+  const checkProfileInfo = async () => {
+    try {
+      const name = await AsyncStorage.getItem('name');
+      const number = await AsyncStorage.getItem('number');
+      const address = await AsyncStorage.getItem('address');
+
+      const profileComplete = !!name && !!number && !!address;
+      setHasProfileInfo(profileComplete);
+      return profileComplete;
+    } catch (error) {
+      console.error('Profil bilgileri kontrol edilirken hata oluştu:', error);
+      return false;
+    }
+  };
+
+  // İlk yükleme sırasında profil bilgilerini kontrol et
   useEffect(() => {
-    const checkProfileInfo = async () => {
-      try {
-        const name = await AsyncStorage.getItem('name');
-        const number = await AsyncStorage.getItem('number');
-        const address = await AsyncStorage.getItem('address');
-
-        setHasProfileInfo(!!name && !!number && !!address);
-      } catch (error) {
-        console.error('Profil bilgileri kontrol edilirken hata oluştu:', error);
-      }
-    };
-
     checkProfileInfo();
   }, []);
+
+  // Ekran her odaklandığında profil bilgilerini kontrol et
+  useFocusEffect(
+    React.useCallback(() => {
+      checkProfileInfo();
+    }, [])
+  );
+
+  // AppState değişikliklerini dinle (arka plan/ön plan geçişleri)
+  useEffect(() => {
+    const subscription = AppState.addEventListener('change', nextAppState => {
+      if (appState.match(/inactive|background/) && nextAppState === 'active') {
+        // Uygulama ön plana geçtiğinde profil bilgilerini kontrol et
+        checkProfileInfo();
+      }
+      setAppState(nextAppState);
+    });
+
+    return () => {
+      subscription.remove();
+    };
+  }, [appState]);
 
   const formatQuantity = (item) => {
     const quantity = Number(item.quantity);
@@ -65,6 +93,7 @@ const CartScreen = () => {
       ],
     );
   };
+  
   return (
     <View style={styles.container}>
       <Text style={styles.header}>🛒 Sepetim</Text>
@@ -100,9 +129,16 @@ const CartScreen = () => {
       )}
 
       {!hasProfileInfo && cartItems.length > 0 && (
-        <Text style={styles.warningText}>
-          ⚠️ Sipariş vermek için profil bilgilerinizi tamamlamalısınız.
-        </Text>
+        <View style={styles.warningContainer}>
+          <Text style={styles.warningText}>
+            ⚠️ Sipariş vermek için profil bilgilerinizi tamamlamalısınız.
+          </Text>
+          <TouchableOpacity
+            style={styles.profileButton}
+            onPress={() => navigation.navigate('Profilim')}>
+            <Text style={styles.profileButtonText}>Profil Bilgilerini Düzenle</Text>
+          </TouchableOpacity>
+        </View>
       )}
 
       {cartItems.length > 0 && hasProfileInfo && (
@@ -140,11 +176,30 @@ const styles = StyleSheet.create({
   productInfo: {flex: 1},
   productName: {fontSize: 16, fontWeight: 'bold', color: '#333'},
   productQuantity: {fontSize: 14, color: '#555'},
+  warningContainer: {
+    marginTop: 15,
+    padding: 10,
+    backgroundColor: '#FFF8E1',
+    borderRadius: 8,
+    borderLeftWidth: 4,
+    borderLeftColor: '#FFC107',
+  },
   warningText: {
     color: '#F44336',
     textAlign: 'center',
     marginVertical: 10,
     fontSize: 14,
+  },
+  profileButton: {
+    backgroundColor: '#2196F3',
+    padding: 10,
+    borderRadius: 8,
+    alignItems: 'center',
+    marginTop: 10,
+  },
+  profileButtonText: {
+    color: 'white',
+    fontWeight: 'bold',
   },
   orderButton: {
     backgroundColor: '#4CAF50',

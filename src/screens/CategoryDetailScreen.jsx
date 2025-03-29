@@ -13,8 +13,6 @@ import ProductItem from '../components/ProductItem';
 import {useNavigation} from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-
-
 const {width} = Dimensions.get('window');
 
 const CategoryDetailScreen = () => {
@@ -34,12 +32,13 @@ const CategoryDetailScreen = () => {
   // JSON verilerinden ana kategorileri çıkarma
   const mainCategories = [...new Set(productData.map(item => item.kategori))];
 
-  // Seçili ana kategorinin alt kategorilerini bulma
+  // Seçili ana kategorinin alt kategorilerini bulma ve boş olanları filtreleme
   const subCategories = [
     ...new Set(
       productData
         .filter(item => item.kategori === selectedMainCategory)
-        .map(item => item['alt-kategori']),
+        .map(item => item['alt-kategori'])
+        .filter(subCat => subCat !== '') // Boş alt kategorileri filtrele
     ),
   ];
 
@@ -47,72 +46,75 @@ const CategoryDetailScreen = () => {
   const filteredProducts = productData.filter(
     product =>
       product.kategori === selectedMainCategory &&
-      product['alt-kategori'] === selectedSubCategory,
+      (selectedSubCategory === '' || product['alt-kategori'] === selectedSubCategory),
   );
 
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-              <TouchableOpacity onPress={() => navigation.goBack()} style={styles.headerButton}>
-                <Icon name="arrow-back" size={24} color="#fff" />
-              </TouchableOpacity>
-              
-              <Text style={styles.productTitle}>Ürünler</Text>
-              
-              <View style={styles.headerButton} />
-            </View>
-      <View style={{height:100}}>
-      {/* Ana Kategori Seçici */}
-      <FlatList
-  horizontal
-  data={mainCategories}
-  renderItem={({item}) => (
-    <TouchableOpacity
-    activeOpacity={0.8}
-      style={[
-        styles.mainCategoryItem,
-        selectedMainCategory === item && styles.selectedMainCategory,
-      ]}
-      onPress={() => {
-        setSelectedMainCategory(item);
-        setSelectedSubCategory(
-          productData.find(p => p.kategori === item)?.['alt-kategori'] || ''
-        );
-      }}>
-      <Text style={styles.mainCategoryText}>{item}</Text>
-    </TouchableOpacity>
-  )}
-  keyExtractor={item => item}
-  showsHorizontalScrollIndicator={false}
-  contentContainerStyle={styles.mainCategoryList}
-/>
-  
-      {/* Alt Kategori Seçici */}
-      <FlatList
-        horizontal
-        data={subCategories}
-        renderItem={({item}) => (
-          <TouchableOpacity
-    activeOpacity={0.8}
-
-            style={[
-              styles.subCategoryItem,
-              selectedSubCategory === item && {},
-            ]}
-            onPress={() => setSelectedSubCategory(item)}>
-            <Text
+        <TouchableOpacity onPress={() => navigation.goBack()} style={styles.headerButton}>
+          <Icon name="arrow-back" size={24} color="#fff" />
+        </TouchableOpacity>
+        
+        <Text style={styles.productTitle}>Ürünler</Text>
+        
+        <View style={styles.headerButton} />
+      </View>
+      <View style={{height: subCategories.length > 0 ? 100 : 50}}>
+        {/* Ana Kategori Seçici */}
+        <FlatList
+          horizontal
+          data={mainCategories}
+          renderItem={({item}) => (
+            <TouchableOpacity
+              activeOpacity={0.8}
               style={[
-                styles.subCategoryText,
-                selectedSubCategory === item && {color: '#e86924'},
-              ]}>
-              {item}
-            </Text>
-          </TouchableOpacity>
+                styles.mainCategoryItem,
+                selectedMainCategory === item && styles.selectedMainCategory,
+              ]}
+              onPress={() => {
+                setSelectedMainCategory(item);
+                // Seçilen kategorinin ilk geçerli alt kategorisini seç veya boş bırak
+                const firstValidSubCategory = productData
+                  .filter(p => p.kategori === item && p['alt-kategori'] !== '')
+                  .map(p => p['alt-kategori'])[0] || '';
+                setSelectedSubCategory(firstValidSubCategory);
+              }}>
+              <Text style={styles.mainCategoryText}>{item}</Text>
+            </TouchableOpacity>
+          )}
+          keyExtractor={item => item}
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.mainCategoryList}
+        />
+  
+        {/* Alt Kategori Seçici - Sadece alt kategoriler varsa göster */}
+        {subCategories.length > 0 && (
+          <FlatList
+            horizontal
+            data={subCategories}
+            renderItem={({item}) => (
+              <TouchableOpacity
+                activeOpacity={0.8}
+                style={[
+                  styles.subCategoryItem,
+                  selectedSubCategory === item && {},
+                ]}
+                onPress={() => setSelectedSubCategory(item)}>
+                <Text
+                  style={[
+                    styles.subCategoryText,
+                    selectedSubCategory === item && {color: '#e86924'},
+                  ]}>
+                  {item}
+                </Text>
+              </TouchableOpacity>
+            )}
+            keyExtractor={item => item}
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={styles.subCategoryList}
+          />
         )}
-        keyExtractor={item => item}
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={styles.subCategoryList}
-      />
       </View>
   
       {/* Ürünler */}
@@ -121,9 +123,9 @@ const CategoryDetailScreen = () => {
         renderItem={({item}) => <ProductItem item={item} />}
         keyExtractor={item => item.id.toString()}
         numColumns={2}
-        initialNumToRender={10} // İlk başta sadece 10 öğe render edilsin
-        maxToRenderPerBatch={10} // Her defasında maksimum 10 öğe render edilsin
-        windowSize={5} // Performansı artırmak için pencere boyutunu belirle
+        initialNumToRender={10}
+        maxToRenderPerBatch={10}
+        windowSize={5}
         contentContainerStyle={styles.productList}
       />
     </View>
@@ -173,7 +175,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   subCategoryList: {
-    height: 50, // Sabit yükseklik
+    height: 50,
     backgroundColor: 'white',
     paddingVertical: 5,
   },
@@ -189,7 +191,6 @@ const styles = StyleSheet.create({
     fontSize: 15,
     textAlign: 'center',
     color: 'black',
-
   },
   productList: {
     paddingHorizontal: 10,
