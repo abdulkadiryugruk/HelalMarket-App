@@ -30,7 +30,7 @@ const imageMappings = {
   'atistirmalik/cips/tatarasi-yogurtlu-mevsim-yesillikli-patates-cips-70gr.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/cips/tatarasi-yogurtlu-mevsim-yesillikli-patates-cips-70gr.webp`),
   'atistirmalik/gofret/kutu-afia-cikolatali-gofret-35-gr-24-adet.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/gofret/kutu-afia-cikolatali-gofret-35-gr-24-adet.webp`),
   'atistirmalik/biskuvi/tatarasi-sutlu-petibor-biskuvi.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/biskuvi/tatarasi-sutlu-petibor-biskuvi.webp`),
-  'atistirmalik/tatarasi-findikli-gofret.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/gofret/tatarasi-findikli-gofret.webp`),
+  'atistirmalik/gofret/tatarasi-findikli-gofret.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/gofret/tatarasi-findikli-gofret.webp`),
   'atistirmalik/gofret/tatarasi-hindistan-cevizli-gofret.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/gofret/tatarasi-hindistan-cevizli-gofret.webp`),
   'atistirmalik/gofret/tatarasi-kakaolu-gofret.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/gofret/tatarasi-kakaolu-gofret.webp`),
   'atistirmalik/gofret/sutlu-finger-biskuvi-140-gr.webp': require(`../../assets/productsImages/kategoriler/atistirmalik/gofret/sutlu-finger-biskuvi-140-gr.webp`),
