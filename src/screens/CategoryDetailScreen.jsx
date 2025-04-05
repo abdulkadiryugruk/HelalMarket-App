@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useRef, useEffect, useMemo} from 'react';
 import {
   View,
   Text,
@@ -30,39 +30,104 @@ const CategoryDetailScreen = () => {
   );
 
   // JSON verilerinden ana kategorileri çıkarma
-  const mainCategories = [...new Set(productData.map(item => item.kategori))];
+  const mainCategories = useMemo(() => {
+    return [...new Set(productData.map(item => item.kategori))];
+  }, []); // productData değişmediği için boş bağımlılık dizisi kullanılabilir
 
   // Seçili ana kategorinin alt kategorilerini bulma ve boş olanları filtreleme
-  const subCategories = [
-    ...new Set(
-      productData
-        .filter(item => item.kategori === selectedMainCategory)
-        .map(item => item['alt-kategori'])
-        .filter(subCat => subCat !== '') // Boş alt kategorileri filtrele
-    ),
-  ];
+  const subCategories = useMemo(() => {
+    return [
+      ...new Set(
+        productData
+          .filter(item => item.kategori === selectedMainCategory)
+          .map(item => item['alt-kategori'])
+          .filter(subCat => subCat !== ''), // Boş alt kategorileri filtrele
+      ),
+    ];
+  }, [selectedMainCategory]); // Sadece selectedMainCategory değiştiğinde yeniden hesapla
 
   // Seçili alt kategorinin ürünlerini bulma
-  const filteredProducts = productData.filter(
-    product =>
-      product.kategori === selectedMainCategory &&
-      (selectedSubCategory === '' || product['alt-kategori'] === selectedSubCategory),
-  );
+  const filteredProducts = useMemo(() => {
+    return productData.filter(
+      product =>
+        product.kategori === selectedMainCategory &&
+        (selectedSubCategory === '' ||
+          product['alt-kategori'] === selectedSubCategory),
+    );
+  }, [selectedMainCategory, selectedSubCategory]);
+
+  // FlatList referansları
+  const mainCategoryListRef = useRef(null);
+  const subCategoryListRef = useRef(null);
+
+  // Sayfa yüklendiğinde seçilen kategoriyi ortala
+  useEffect(() => {
+    if (mainCategoryListRef.current && mainCategories.length > 0) {
+      // Seçilen kategorinin indeksini bul
+      const selectedIndex = mainCategories.findIndex(
+        item => item === selectedMainCategory,
+      );
+
+      // Kategoriye scroll et, animate:true animasyonlu geçiş yapar
+      mainCategoryListRef.current.scrollToIndex({
+        index: selectedIndex,
+        animated: true,
+        viewPosition: 0.5, // 0.5 ortada gösterir
+      });
+    }
+  }, [mainCategories, selectedMainCategory]); // Eksik bağımlılıkları ekledim
+
+  // Alt kategori seçildiğinde ortala
+  useEffect(() => {
+    if (
+      subCategoryListRef.current &&
+      subCategories.length > 0 &&
+      selectedSubCategory
+    ) {
+      const selectedIndex = subCategories.findIndex(
+        item => item === selectedSubCategory,
+      );
+      if (selectedIndex !== -1) {
+        subCategoryListRef.current.scrollToIndex({
+          index: selectedIndex,
+          animated: true,
+          viewPosition: 0.5,
+        });
+      }
+    }
+  }, [selectedSubCategory, subCategories]);
+
+  // scrollToIndex hata yönetimi
+  const handleScrollToIndexFailed = info => {
+    const wait = new Promise(resolve => setTimeout(resolve, 500));
+    wait.then(() => {
+      if (mainCategoryListRef.current) {
+        mainCategoryListRef.current.scrollToIndex({
+          index: info.index,
+          animated: true,
+          viewPosition: 0.5,
+        });
+      }
+    });
+  };
 
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => navigation.goBack()} style={styles.headerButton}>
+        <TouchableOpacity
+          onPress={() => navigation.goBack()}
+          style={styles.headerButton}>
           <Icon name="arrow-back" size={24} color="#fff" />
         </TouchableOpacity>
-        
+
         <Text style={styles.productTitle}>Ürünler</Text>
-        
+
         <View style={styles.headerButton} />
       </View>
       <View style={{height: subCategories.length > 0 ? 100 : 50}}>
         {/* Ana Kategori Seçici */}
         <FlatList
+          ref={mainCategoryListRef}
           horizontal
           data={mainCategories}
           renderItem={({item}) => (
@@ -75,10 +140,25 @@ const CategoryDetailScreen = () => {
               onPress={() => {
                 setSelectedMainCategory(item);
                 // Seçilen kategorinin ilk geçerli alt kategorisini seç veya boş bırak
-                const firstValidSubCategory = productData
-                  .filter(p => p.kategori === item && p['alt-kategori'] !== '')
-                  .map(p => p['alt-kategori'])[0] || '';
+                const firstValidSubCategory =
+                  productData
+                    .filter(
+                      p => p.kategori === item && p['alt-kategori'] !== '',
+                    )
+                    .map(p => p['alt-kategori'])[0] || '';
                 setSelectedSubCategory(firstValidSubCategory);
+
+                // Seçilen ana kategoriye scroll et
+                const selectedIndex = mainCategories.findIndex(
+                  cat => cat === item,
+                );
+                if (selectedIndex !== -1) {
+                  mainCategoryListRef.current?.scrollToIndex({
+                    index: selectedIndex,
+                    animated: true,
+                    viewPosition: 0.5, // 0.5 ortada gösterir
+                  });
+                }
               }}>
               <Text style={styles.mainCategoryText}>{item}</Text>
             </TouchableOpacity>
@@ -86,11 +166,14 @@ const CategoryDetailScreen = () => {
           keyExtractor={item => item}
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.mainCategoryList}
+          onScrollToIndexFailed={handleScrollToIndexFailed}
         />
-  
+
         {/* Alt Kategori Seçici - Sadece alt kategoriler varsa göster */}
         {subCategories.length > 0 && (
           <FlatList
+            key={selectedMainCategory} // Ana kategori değiştiğinde FlatList yenilenir
+            ref={subCategoryListRef}
             horizontal
             data={subCategories}
             renderItem={({item}) => (
@@ -100,7 +183,21 @@ const CategoryDetailScreen = () => {
                   styles.subCategoryItem,
                   selectedSubCategory === item && {},
                 ]}
-                onPress={() => setSelectedSubCategory(item)}>
+                onPress={() => {
+                  setSelectedSubCategory(item);
+
+                  // Seçilen alt kategoriye scroll et
+                  const selectedIndex = subCategories.findIndex(
+                    cat => cat === item,
+                  );
+                  if (selectedIndex !== -1) {
+                    subCategoryListRef.current?.scrollToIndex({
+                      index: selectedIndex,
+                      animated: true,
+                      viewPosition: 0.5, // 0.5 ortada gösterir
+                    });
+                  }
+                }}>
                 <Text
                   style={[
                     styles.subCategoryText,
@@ -113,10 +210,11 @@ const CategoryDetailScreen = () => {
             keyExtractor={item => item}
             showsHorizontalScrollIndicator={false}
             contentContainerStyle={styles.subCategoryList}
+            onScrollToIndexFailed={handleScrollToIndexFailed}
           />
         )}
       </View>
-  
+
       {/* Ürünler */}
       <FlatList
         data={filteredProducts}
@@ -184,7 +282,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     marginHorizontal: 5,
     borderRadius: 10,
-    borderWidth: .2,
+    borderWidth: 0.2,
   },
   subCategoryText: {
     fontWeight: 'bold',
@@ -194,7 +292,7 @@ const styles = StyleSheet.create({
   },
   productList: {
     paddingHorizontal: 10,
-  }
+  },
 });
 
 export default CategoryDetailScreen;

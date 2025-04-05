@@ -12859,6 +12859,18 @@
         "9. sutun":""
     },
     {
+        "id":1073,
+        "kategori":"İÇECEKLER",
+        "alt-kategori":"Maden Suyu",
+        "name":  "Kızılay Sade Maden Suyu 6x200 Ml",
+        "4. sutun":"",
+        "birim":"",
+        "satis-sekli":"adet",
+        "image":"kategoriler/icecekler/maden-suyu/kizilay-sade-maden-suyu-6x200ml.webp",
+        "8. sutun":"",
+        "9. sutun":""
+    },
+    {
         "id":1070,
         "kategori":"İÇECEKLER",
         "alt-kategori":"Maden Suyu",
@@ -12866,7 +12878,7 @@
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"adet",
-        "image":"kategoriler/icecekler/maden-suyu/kizilay-erzincan-dogal-maden-suyu-6X200 ml.webp",
+        "image":"kategoriler/icecekler/maden-suyu/kizilay-erzincan-dogal-maden-suyu-6X200ml.webp",
         "8. sutun":"",
         "9. sutun":""
     },
@@ -12891,18 +12903,6 @@
         "birim":"",
         "satis-sekli":"adet",
         "image":"kategoriler/icecekler/maden-suyu/kizilay-sade-erzincan-maden-suyu-24x200ml.webp",
-        "8. sutun":"",
-        "9. sutun":""
-    },
-    {
-        "id":1073,
-        "kategori":"İÇECEKLER",
-        "alt-kategori":"Maden Suyu",
-        "name":  "Kızılay Sade Maden Suyu 6x200 Ml",
-        "4. sutun":"",
-        "birim":"",
-        "satis-sekli":"adet",
-        "image":"kategoriler/icecekler/maden-suyu/kizilay-sade-maden-suyu-6x200 ml.webp",
         "8. sutun":"",
         "9. sutun":""
     },
