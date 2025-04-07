@@ -23,38 +23,62 @@ const CategoryDetailScreen = () => {
   // Ana kategori
   const [selectedMainCategory, setSelectedMainCategory] = useState(category);
 
-  // Seçili alt kategori
-  const [selectedSubCategory, setSelectedSubCategory] = useState(
-    productData.find(item => item.kategori === category)?.['alt-kategori'] ||
-      '',
-  );
-
   // JSON verilerinden ana kategorileri çıkarma
   const mainCategories = useMemo(() => {
-    return [...new Set(productData.map(item => item.kategori))];
-  }, []); // productData değişmediği için boş bağımlılık dizisi kullanılabilir
+    const allCategories = [];
+    productData.forEach(item => {
+      if (Array.isArray(item.kategori)) {
+        // Array formatlı kategoriler için
+        item.kategori.forEach(cat => allCategories.push(cat));
+      } else {
+        // String formatlı kategoriler için
+        allCategories.push(item.kategori);
+      }
+    });
+    return [...new Set(allCategories)]; // Tekrarlanan kategorileri kaldır
+  }, []);
 
-  // Seçili ana kategorinin alt kategorilerini bulma ve boş olanları filtreleme
+  // Seçili ana kategoriye ait olan ürünleri bulma
+  const productsInSelectedCategory = useMemo(() => {
+    return productData.filter(product => {
+      if (Array.isArray(product.kategori)) {
+        return product.kategori.includes(selectedMainCategory);
+      }
+      return product.kategori === selectedMainCategory;
+    });
+  }, [selectedMainCategory]);
+
+  // Seçili ana kategorinin alt kategorilerini bulma
   const subCategories = useMemo(() => {
-    return [
-      ...new Set(
-        productData
-          .filter(item => item.kategori === selectedMainCategory)
-          .map(item => item['alt-kategori'])
-          .filter(subCat => subCat !== ''), // Boş alt kategorileri filtrele
-      ),
-    ];
-  }, [selectedMainCategory]); // Sadece selectedMainCategory değiştiğinde yeniden hesapla
+    const subCats = productsInSelectedCategory
+      .map(product => product['alt-kategori'])
+      .filter(subCat => subCat !== ''); // Boş alt kategorileri filtrele
+    
+    return [...new Set(subCats)]; // Tekrarlanan alt kategorileri kaldır
+  }, [productsInSelectedCategory]);
+
+  // Seçili alt kategori
+  const [selectedSubCategory, setSelectedSubCategory] = useState(
+    subCategories.length > 0 ? subCategories[0] : ''
+  );
 
   // Seçili alt kategorinin ürünlerini bulma
   const filteredProducts = useMemo(() => {
-    return productData.filter(
+    return productsInSelectedCategory.filter(
       product =>
-        product.kategori === selectedMainCategory &&
-        (selectedSubCategory === '' ||
-          product['alt-kategori'] === selectedSubCategory),
+        selectedSubCategory === '' ||
+        product['alt-kategori'] === selectedSubCategory
     );
-  }, [selectedMainCategory, selectedSubCategory]);
+  }, [productsInSelectedCategory, selectedSubCategory]);
+
+  // Ana kategori değiştiğinde alt kategori seçimini güncelle
+  useEffect(() => {
+    if (subCategories.length > 0) {
+      setSelectedSubCategory(subCategories[0]);
+    } else {
+      setSelectedSubCategory('');
+    }
+  }, [subCategories, selectedMainCategory]);
 
   // FlatList referansları
   const mainCategoryListRef = useRef(null);
@@ -63,21 +87,19 @@ const CategoryDetailScreen = () => {
   // Sayfa yüklendiğinde seçilen kategoriyi ortala
   useEffect(() => {
     if (mainCategoryListRef.current && mainCategories.length > 0) {
-      // Seçilen kategorinin indeksini bul
       const selectedIndex = mainCategories.findIndex(
         item => item === selectedMainCategory,
       );
 
-      // Kategoriye scroll et, animate:true animasyonlu geçiş yapar
       mainCategoryListRef.current.scrollToIndex({
         index: selectedIndex,
         animated: true,
         viewPosition: 0.5, // 0.5 ortada gösterir
       });
     }
-  }, [mainCategories, selectedMainCategory]); // Eksik bağımlılıkları ekledim
+  }, [mainCategories, selectedMainCategory]);
 
-  // Alt kategori seçildiğinde ortala
+  // Alt kategori seçildiğinde ortala 
   useEffect(() => {
     if (
       subCategoryListRef.current &&
@@ -139,26 +161,6 @@ const CategoryDetailScreen = () => {
               ]}
               onPress={() => {
                 setSelectedMainCategory(item);
-                // Seçilen kategorinin ilk geçerli alt kategorisini seç veya boş bırak
-                const firstValidSubCategory =
-                  productData
-                    .filter(
-                      p => p.kategori === item && p['alt-kategori'] !== '',
-                    )
-                    .map(p => p['alt-kategori'])[0] || '';
-                setSelectedSubCategory(firstValidSubCategory);
-
-                // Seçilen ana kategoriye scroll et
-                const selectedIndex = mainCategories.findIndex(
-                  cat => cat === item,
-                );
-                if (selectedIndex !== -1) {
-                  mainCategoryListRef.current?.scrollToIndex({
-                    index: selectedIndex,
-                    animated: true,
-                    viewPosition: 0.5, // 0.5 ortada gösterir
-                  });
-                }
               }}>
               <Text style={styles.mainCategoryText}>{item}</Text>
             </TouchableOpacity>

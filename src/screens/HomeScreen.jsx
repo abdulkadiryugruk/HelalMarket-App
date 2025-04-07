@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useMemo } from 'react';
 import {
   StyleSheet,
   Text,
@@ -12,14 +12,24 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from '@react-navigation/native';
 import productData from '../data/urunler.json';
 
-
-
 const HomeScreen = () => {
   const navigation = useNavigation();
   const alertShown = useRef(false); // 📌 Alert'in tekrar çıkmasını engellemek için
 
-const Kategori = [...new Set(productData.map(item => item.kategori))];
-
+  // Kategorileri çıkarırken array ve string yapısını destekleyen kod
+  const Kategori = useMemo(() => {
+    const allCategories = [];
+    productData.forEach(item => {
+      if (Array.isArray(item.kategori)) {
+        // Array formatlı kategoriler için her kategoriyi ekle
+        item.kategori.forEach(cat => allCategories.push(cat));
+      } else {
+        // String formatlı kategoriler için
+        allCategories.push(item.kategori);
+      }
+    });
+    return [...new Set(allCategories)]; // Tekrarlanan kategorileri kaldır
+  }, []);
 
   useEffect(() => {
     const checkCart = async () => {
@@ -28,7 +38,7 @@ const Kategori = [...new Set(productData.map(item => item.kategori))];
         if (savedCart) {
           const cartItems = JSON.parse(savedCart);
           if (cartItems.length > 0 && !alertShown.current) {
-            alertShown.current = true; // ✅ Tekrar çıkmasını engelliyoruz
+            alertShown.current = true;
             Alert.alert(
               "Hatırlatma",
               "Sepetinizde ürünler var, alışverişe devam etmek ister misiniz?",
@@ -37,7 +47,6 @@ const Kategori = [...new Set(productData.map(item => item.kategori))];
                 { text: "Tamam", onPress: () => navigation.navigate("Sepetim") } // ✅ Doğru yönlendirme
               ]
             );
-            
           }
         }
       } catch (error) {
