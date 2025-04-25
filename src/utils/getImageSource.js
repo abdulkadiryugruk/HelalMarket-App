@@ -593,7 +593,6 @@ const imageMappings = {
   'kategoriler/kisisel-bakim/deodorant/yesilmarka-dogal-deodorant-portakal.webp': require(`../../assets/productsImages/kategoriler/kisisel-bakim/deodorant/yesilmarka-dogal-deodorant-portakal.webp`),
   'kategoriler/kisisel-bakim/deodorant/yesilmarka-dogal-deodorant-pruzsuzlestirici.webp': require(`../../assets/productsImages/kategoriler/kisisel-bakim/deodorant/yesilmarka-dogal-deodorant-pruzsuzlestirici.webp`),
   'kategoriler/kisisel-bakim/parfum-esans/aksa-alkolsuz-parfum-50ml-(cesitleri).webp': require(`../../assets/productsImages/kategoriler/kisisel-bakim/parfum-esans/aksa-alkolsuz-parfum-50ml-(cesitleri).webp`),
-  'kategoriler/kisisel-bakim/parfum-esans/aksa-dirilis-sprey-parfum-50-cc.webp': require(`../../assets/productsImages/kategoriler/kisisel-bakim/parfum-esans/aksa-dirilis-sprey-parfum-50-cc.webp`),
   'kategoriler/kisisel-bakim/parfum-esans/aksa-esanskokusu-parfum-50cc-(cesitleri).webp': require(`../../assets/productsImages/kategoriler/kisisel-bakim/parfum-esans/aksa-esanskokusu-parfum-50cc-(cesitleri).webp`),
   'kategoriler/kisisel-bakim/parfum-esans/aksa-surme-klasik-esans-meryem-5cc.webp': require(`../../assets/productsImages/kategoriler/kisisel-bakim/parfum-esans/aksa-surme-klasik-esans-meryem-5cc.webp`),
   'kategoriler/kisisel-bakim/parfum-esans/buhara-parfum-cesitleri-50ml.webp': require(`../../assets/productsImages/kategoriler/kisisel-bakim/parfum-esans/buhara-parfum-cesitleri-50ml.webp`),
@@ -932,9 +931,9 @@ const imageMappings = {
   'kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/bingo-krem-amonyak-750ml.webp': require(`../../assets/productsImages/kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/bingo-krem-amonyak-750ml.webp`),
   'kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/bingo-limonlu-krem-750ml.webp': require(`../../assets/productsImages/kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/bingo-limonlu-krem-750ml.webp`),
   'kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/bingo-yuzey-temizleyici-manolya-2,5lt.webp': require(`../../assets/productsImages/kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/bingo-yuzey-temizleyici-manolya-2,5lt.webp`),
-  'kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/hacerul-esved-oda-ve-seccade-kokusu-400-ml.webp': require(`../../assets/productsImages/kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/hacerul-esved-oda-ve-seccade-kokusu-400-ml.webp`),
-  'kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/itrul-ravza-oda-kokusu-spreyi-400ml.webp': require(`../../assets/productsImages/kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/itrul-ravza-oda-kokusu-spreyi-400ml.webp`),
-  'kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/kabe-ortusu-kokusu-400ml.webp': require(`../../assets/productsImages/kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/kabe-ortusu-kokusu-400ml.webp`),
+  'kategoriler/kisisel-bakim/parfum-esans/hacerul-esved-oda-ve-seccade-kokusu-400-ml.webp': require(`../../assets/productsImages/kategoriler/kisisel-bakim/parfum-esans/hacerul-esved-oda-ve-seccade-kokusu-400-ml.webp`),
+  'kategoriler/kisisel-bakim/parfum-esans/itrul-ravza-oda-kokusu-spreyi-400ml.webp': require(`../../assets/productsImages/kategoriler/kisisel-bakim/parfum-esans/itrul-ravza-oda-kokusu-spreyi-400ml.webp`),
+  'kategoriler/kisisel-bakim/parfum-esans/kabe-ortusu-kokusu-400ml.webp': require(`../../assets/productsImages/kategoriler/kisisel-bakim/parfum-esans/kabe-ortusu-kokusu-400ml.webp`),
   'kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/klorak-banyo-temizleyici-750ml.webp': require(`../../assets/productsImages/kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/klorak-banyo-temizleyici-750ml.webp`),
   'kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/klorak-cam-sil-925ml.webp': require(`../../assets/productsImages/kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/klorak-cam-sil-925ml.webp`),
   'kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/klorak-mutfak-temizleyici-sprey-750ml.webp': require(`../../assets/productsImages/kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/klorak-mutfak-temizleyici-sprey-750ml.webp`),
@@ -942,7 +941,7 @@ const imageMappings = {
   'kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/klorak-yag-coz.webp': require(`../../assets/productsImages/kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/klorak-yag-coz.webp`),
   'kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/lider-oda-spreyi-aqua-misk-350ml.webp': require(`../../assets/productsImages/kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/lider-oda-spreyi-aqua-misk-350ml.webp`),
   'kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/lider-oda-spreyi-deniz-esintisi-350ml.webp': require(`../../assets/productsImages/kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/lider-oda-spreyi-deniz-esintisi-350ml.webp`),
-  'kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/makami-ibrahim-oda-ve-seccade-kokusu-400-ml.webp': require(`../../assets/productsImages/kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/makami-ibrahim-oda-ve-seccade-kokusu-400-ml.webp`),
+  'kategoriler/kisisel-bakim/parfum-esans/makami-ibrahim-oda-ve-seccade-kokusu-400-ml.webp': require(`../../assets/productsImages/kategoriler/kisisel-bakim/parfum-esans/makami-ibrahim-oda-ve-seccade-kokusu-400-ml.webp`),
   'kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/naturalive-arac-ici-temizleyici-500ml.webp': require(`../../assets/productsImages/kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/naturalive-arac-ici-temizleyici-500ml.webp`),
   'kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/naturalive-dogal-guc-500ml.webp': require(`../../assets/productsImages/kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/naturalive-dogal-guc-500ml.webp`),
   'kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/naturalive-dogal-guc-konsantre-1000-ml.webp': require(`../../assets/productsImages/kategoriler/temizlik-urunleri/genel-temizlik-maddeleri/naturalive-dogal-guc-konsantre-1000-ml.webp`),
@@ -1153,6 +1152,72 @@ const imageMappings = {
   'kategoriler/icecekler/salgam/ali-gode-salgam-1-litre-salgam.webp': require(`../../assets/productsImages/kategoriler/icecekler/salgam/ali-gode-salgam-1-litre-salgam.webp`),
   'kategoriler/icecekler/salgam/ali-gode-salgam-330-ml-salgam.webp': require(`../../assets/productsImages/kategoriler/icecekler/salgam/ali-gode-salgam-330-ml-salgam.webp`),
   'kategoriler/icecekler/salgam/ali-gode-salgam-5-litre-salgam.webp': require(`../../assets/productsImages/kategoriler/icecekler/salgam/ali-gode-salgam-5-litre-salgam.webp`),
+
+
+'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-aci-toz-biber-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-aci-toz-biber-100gr.jpg`),
+
+'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-aci-urfa-isot-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-aci-urfa-isot-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-anason-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-anason-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-cemen-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-cemen-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-corek-otu-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-corek-otu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-hashas-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-hindistan-cevizi-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-kabuk-tarcin-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-karabiber-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-karbonat-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-kasap-kofte-baharati-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-kimyon-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-kisnis-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-kori-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-limon-tuzu-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-misir-unu-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-nane-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-pirinc-unu-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-pul-biber-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-sumak-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-susam-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-tatli-pul-biber-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-tavuk-cesni-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-toz-biber-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-toz-sarimsak-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-toz-sumak-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-toz-tarcin-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-yedi-turlu-kofte-baharati-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-zencefil-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-zerdecal-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
+
+ 'kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-aci-pul-biber-100gr.jpg' : require(`../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-galeta-unu-100gr.jpg`),
 };
 
 export const getImageSource = imagePath => {
