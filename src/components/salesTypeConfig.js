@@ -19,27 +19,26 @@ const QuantitySelector = ({
   const validateAndSetQuantity = (value, type) => {
     // Virgülü noktaya çevirerek sayı parse etme
     const numValue = parseFloat(value.replace(',', '.'));
-  
+
     if (product['satis-sekli'] === 'adet') {
       // Kullanıcı yanlış yazsa bile değeri değiştirmeye izin ver
       setQuantity(value);
-  
+
       // Tamsayı değilse, uyarı göster
       if (!isNaN(numValue) && numValue >= 0 && !Number.isInteger(numValue)) {
-        Alert.alert("Geçersiz Miktar", "Lütfen tam sayı girin.");
+        Alert.alert('Geçersiz Miktar', 'Lütfen tam sayı girin.');
       }
-    } 
-    else if (product['satis-sekli'] === 'gram') {
+    } else if (product['satis-sekli'] === 'gram') {
       const currentUnitType = type || unitType;
       const maxValue = currentUnitType === 'gram' ? 1000 : 10;
       const minValue = currentUnitType === 'gram' ? 10 : 0.1;
-  
+
       // Switch değiştiğinde başlangıç değerini ayarla
       if (type) {
         setQuantity(type === 'gram' ? '100' : '1');
         return;
       }
-  
+
       // Kullanıcı yanlış yazsa bile değeri değiştirmeye izin ver
       setQuantity(value);
     }
@@ -49,9 +48,12 @@ const QuantitySelector = ({
     return (
       <View style={styles.quantitySelectorContainer}>
         <TouchableOpacity
-          onPress={() =>
-            validateAndSetQuantity((parseInt(quantity) - 1).toString(), 'adet')
-          }
+          onPress={() => {
+            const current = parseInt(quantity, 10);
+            if (current > 1) {
+              validateAndSetQuantity((current - 1).toString(), 'adet');
+            }
+          }}
           style={styles.quantityButton}>
           <Text style={styles.quantityButtonText}>-</Text>
         </TouchableOpacity>

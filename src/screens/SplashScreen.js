@@ -13,7 +13,7 @@ const SplashScreen = () => {
     // Belirli bir süre sonra ana sayfaya geçiş yap
     const timer = setTimeout(() => {
       navigation.replace('Main');
-    }, 1800); // 3 saniye (veya ihtiyacınıza göre ayarlayın)
+    }, 2000); // 3 saniye (veya ihtiyacınıza göre ayarlayın)
 
     return () => clearTimeout(timer);
   }, [navigation]);

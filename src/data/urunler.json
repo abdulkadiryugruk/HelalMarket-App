@@ -5458,7 +5458,7 @@
         "id":495,
         "kategori":"KİŞİSEL BAKIM",
         "alt-kategori":"Ağız Bakım",
-        "name":"Agarta Diş Macunu Mockup 2",
+        "name":"Agarta Doğal Nane Özlü Diş Macunu 100 Ml",
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"adet",
@@ -6559,22 +6559,10 @@
         "9. sutun":""
     },
     {
-        "id":587,
-        "kategori":"KİŞİSEL BAKIM",
-        "alt-kategori":"Parfüm  & Esans",
-        "name":"Aksa Diriliş Sprey Parfüm 50 cc",
-        "4. sutun":"",
-        "birim":"",
-        "satis-sekli":"adet",
-        "image":"kategoriler/kisisel-bakim/parfum-esans/aksa-dirilis-sprey-parfum-50-cc.webp",
-        "8. sutun":"",
-        "9. sutun":""
-    },
-    {
         "id":588,
         "kategori":"KİŞİSEL BAKIM",
         "alt-kategori":"Parfüm  & Esans",
-        "name":"Aksa Esanskokusu Parfüm 50 cc (Çeşitleri)",
+        "name":"Aksa Esans Kokusu Parfüm 50 cc (Çeşitleri)",
         "4. sutun":"",
         "birim":"",
         "satis-sekli":"adet",
@@ -13713,6 +13701,18 @@
             "9. sutun": ""
         },
         {
+            "id": 1181,
+            "kategori": "TEMEL GIDA",
+            "alt-kategori": "Tuz & Baharat",
+            "name": "Korkmaz Baharat Toz Soğan 100Gr",
+            "4. sutun": "",
+            "birim": "",
+            "satis-sekli": "adet",
+            "image": "kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-sogan-tozu-100gr.webp",
+            "8. sutun": "",
+            "9. sutun": ""
+        },
+        {
             "id": 1183,
             "kategori": "TEMEL GIDA",
             "alt-kategori": "Tuz & Baharat",
@@ -13757,6 +13757,30 @@
             "birim": "",
             "satis-sekli": "adet",
             "image": "kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-zerdecal-100gr.webp",
+            "8. sutun": "",
+            "9. sutun": ""
+        },
+        {
+            "id": 1187,
+            "kategori": "TEMEL GIDA",
+            "alt-kategori": "Tuz & Baharat",
+            "name": "Korkmaz Baharat Kakao 100Gr",
+            "4. sutun": "",
+            "birim": "",
+            "satis-sekli": "adet",
+            "image": "kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-kakao-100gr.webp",
+            "8. sutun": "",
+            "9. sutun": ""
+        },
+        {
+            "id": 1188,
+            "kategori": "TEMEL GIDA",
+            "alt-kategori": "Tuz & Baharat",
+            "name": "Korkmaz Baharat Kakao 250Gr",
+            "4. sutun": "",
+            "birim": "",
+            "satis-sekli": "adet",
+            "image": "kategoriler/temel-gida/tuz-baharat/korkmaz-baharat-kakao-100gr.webp",
             "8. sutun": "",
             "9. sutun": ""
         },
