@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
@@ -14,6 +14,7 @@ import {CartProvider} from './src/context/CartContext';
 import { OrderProvider } from './src/context/OrderContext';
 import ProfileScreen from './src/screens/ProfileScreen';
 import ProductDetail from './src/screens/ProductDetail';
+import SplashScreen from './src/screens/SplashScreen';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -107,12 +108,22 @@ const HomeTabs = () => {
   );
 };
 
+// Ana uygulama için kök navigasyon ağacı
+const RootStack = () => {
+  return (
+    <Stack.Navigator screenOptions={{headerShown: false}}>
+      <Stack.Screen name="Splash" component={SplashScreen} />
+      <Stack.Screen name="Main" component={MainStack} />
+    </Stack.Navigator>
+  );
+};
+
 const App = () => {
   return (
     <OrderProvider>
       <CartProvider>
         <NavigationContainer>
-          <MainStack />
+          <RootStack />
         </NavigationContainer>
         <Toast />
       </CartProvider>
