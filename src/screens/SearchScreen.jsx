@@ -23,8 +23,8 @@ const SearchScreen = () => {
     <View style={styles.container}>
       <TextInput
         style={styles.searchBar}
-        placeholder='Ürün Ara...'
-        placeholderTextColor='gray'
+        placeholder="Ürün Ara..."
+        placeholderTextColor="gray"
         value={searchQuery}
         onChangeText={handleSearch}
       />
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     paddingLeft: 10,
     marginBottom: 20,
-
+    color: 'black',
   },
 });
 
