@@ -1247,6 +1247,7 @@ const imageMappings = {
 
   'kategoriler/temel-gida/tuz-baharat/sifay-ince-himalaya-kaya-tuzu-1000gr.webp': require('../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/sifay-ince-himalaya-kaya-tuzu-1000gr.webp'),
   'kategoriler/temel-gida/tuz-baharat/sifay-ince-pembe-himalaya-kaya-tuzu-1000gr.webp': require('../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/sifay-ince-pembe-himalaya-kaya-tuzu-1000gr.webp'),
+  'kategoriler/kisisel-bakim/sabun-dus-jeli/himalaya-tuz-sabunu-350gr.webp': require('../../assets/productsImages/kategoriler/kisisel-bakim/sabun-dus-jeli/himalaya-tuz-sabunu-350gr.webp'),
 };
 
 export const getImageSource = imagePath => {
