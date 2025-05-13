@@ -8947,6 +8947,18 @@
         "8. sutun":"",
         "9. sutun":""
     },
+            {
+        "id":1281,
+        "kategori":"MANAV",
+        "alt-kategori":"Meyve",
+        "name":"Sarı Elma",
+        "4. sutun":"",
+        "birim":"",
+        "satis-sekli":"gram",
+        "image":"kategoriler/manav/meyve/sari-elma.webp",
+        "8. sutun":"",
+        "9. sutun":""
+    },
     {
         "id":1268,
         "kategori":"MANAV",
@@ -10233,6 +10245,18 @@
         "birim":"",
         "satis-sekli":"adet",
         "image":"kategoriler/temel-gida/pasta-malzemeleri/eris-un-5-kg.webp",
+        "8. sutun":"",
+        "9. sutun":""
+    },
+                {
+        "id":1280,
+        "kategori":"TEMEL GIDA",
+        "alt-kategori":"Pasta Malzemeleri",
+        "name":"Eriş Un 10 Kg",
+        "4. sutun":"",
+        "birim":"",
+        "satis-sekli":"adet",
+        "image":"kategoriler/temel-gida/pasta-malzemeleri/eris-un-10-kg.webp",
         "8. sutun":"",
         "9. sutun":""
     },
@@ -14880,6 +14904,54 @@
         "birim":"",
         "satis-sekli":"adet",
         "image":"kategoriler/kisisel-bakim/sabun-dus-jeli/himalaya-tuz-sabunu-350gr.webp",
+        "8. sutun":"",
+        "9. sutun":""
+        },
+                {
+        "id":1278,
+        "kategori" : "MANAV",
+        "alt-kategori":"Meyve",
+        "name" :"Üzüm",
+        "4. sutun":"",
+        "birim":"",
+        "satis-sekli":"gram",
+        "image":"kategoriler/manav/meyve/uzum.webp",
+        "8. sutun":"",
+        "9. sutun":""
+        },
+                {
+        "id":1279,
+        "kategori" : "MANAV",
+        "alt-kategori":"Meyve",
+        "name" :"İncir",
+        "4. sutun":"",
+        "birim":"",
+        "satis-sekli":"gram",
+        "image":"kategoriler/manav/meyve/incir.webp",
+        "8. sutun":"",
+        "9. sutun":""
+        },
+        {
+        "id":1279,
+        "kategori" : "TEMEL GIDA",
+        "alt-kategori":"Pasta Malzemeleri",
+        "name" :"Pakmaya İnstant Kuru Hamur Mayası 3x10 Gr",
+        "4. sutun":"",
+        "birim":"",
+        "satis-sekli":"adet",
+        "image":"kategoriler/temel-gida/pasta-malzemeleri/pakmaya-instant-maya-3x10gr.webp",
+        "8. sutun":"",
+        "9. sutun":""
+        },
+                {
+        "id":1279,
+        "kategori" : "TEMEL GIDA",
+        "alt-kategori":"Pasta Malzemeleri",
+        "name" :"Pakmaya İnstant Maya 100 Gr",
+        "4. sutun":"",
+        "birim":"",
+        "satis-sekli":"adet",
+        "image":"kategoriler/temel-gida/pasta-malzemeleri/pakmaya-instant-maya-100gr.webp",
         "8. sutun":"",
         "9. sutun":""
         }

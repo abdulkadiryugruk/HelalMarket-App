@@ -1239,6 +1239,8 @@ const imageMappings = {
   'kategoriler/manav/meyve/kayisi.webp': require('../../assets/productsImages/kategoriler/manav/meyve/kayisi.webp'),
   'kategoriler/manav/meyve/kiraz.webp': require('../../assets/productsImages/kategoriler/manav/meyve/kiraz.webp'),
   'kategoriler/manav/meyve/yesil-elma.webp': require('../../assets/productsImages/kategoriler/manav/meyve/yesil-elma.webp'),
+  'kategoriler/manav/meyve/uzum.webp': require('../../assets/productsImages/kategoriler/manav/meyve/uzum.webp'),
+  'kategoriler/manav/meyve/incir.webp': require('../../assets/productsImages/kategoriler/manav/meyve/incir.webp'),
 
   'atistirmalik/cips/tatarasi-peynir-cesnili-misir-cips-40gr.webp': require('../../assets/productsImages/kategoriler/atistirmalik/cips/tatarasi-peynir-cesnili-misir-cips-40gr.webp'),
 
@@ -1248,6 +1250,11 @@ const imageMappings = {
   'kategoriler/temel-gida/tuz-baharat/sifay-ince-himalaya-kaya-tuzu-1000gr.webp': require('../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/sifay-ince-himalaya-kaya-tuzu-1000gr.webp'),
   'kategoriler/temel-gida/tuz-baharat/sifay-ince-pembe-himalaya-kaya-tuzu-1000gr.webp': require('../../assets/productsImages/kategoriler/temel-gida/tuz-baharat/sifay-ince-pembe-himalaya-kaya-tuzu-1000gr.webp'),
   'kategoriler/kisisel-bakim/sabun-dus-jeli/himalaya-tuz-sabunu-350gr.webp': require('../../assets/productsImages/kategoriler/kisisel-bakim/sabun-dus-jeli/himalaya-tuz-sabunu-350gr.webp'),
+  'kategoriler/temel-gida/pasta-malzemeleri/eris-un-10-kg.webp': require('../../assets/productsImages/kategoriler/temel-gida/pasta-malzemeleri/eris-un-10-kg.webp'),
+
+  'kategoriler/manav/meyve/sari-elma.webp': require('../../assets/productsImages/kategoriler/manav/meyve/sari-elma.webp'),
+  'kategoriler/temel-gida/pasta-malzemeleri/pakmaya-instant-maya-3x10gr.webp': require('../../assets/productsImages/kategoriler/temel-gida/pasta-malzemeleri/pakmaya-instant-maya-3x10gr.webp'),
+  'kategoriler/temel-gida/pasta-malzemeleri/pakmaya-instant-maya-100gr.webp': require('../../assets/productsImages/kategoriler/temel-gida/pasta-malzemeleri/pakmaya-instant-maya-100gr.webp'),
 };
 
 export const getImageSource = imagePath => {
